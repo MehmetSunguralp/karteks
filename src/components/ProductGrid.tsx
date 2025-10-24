@@ -32,7 +32,7 @@ export const ProductGrid = () => {
   ];
 
   return (
-    <Box sx={{ py: 8 }}>
+    <Box sx={{ pt: 8, pb: 0 }}>
       <Container>
         <Typography
           variant='h2'

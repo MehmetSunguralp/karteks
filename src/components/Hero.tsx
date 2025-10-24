@@ -66,8 +66,9 @@ export const Hero = () => {
           sx={{
             px: 4,
             py: 1.5,
-            fontSize: '1.1rem',
+            fontSize: '1.5rem',
             fontWeight: 700,
+            color: 'white',
           }}
         >
           Teklif Alın

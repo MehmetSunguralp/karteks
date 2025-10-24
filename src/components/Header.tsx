@@ -1,4 +1,3 @@
-'use client';
 import { AppBar, Toolbar, Typography, Button, Box, useTheme } from '@mui/material';
 import Link from 'next/link';
 import HomeFilledIcon from '@mui/icons-material/HomeFilled';
@@ -7,7 +6,6 @@ import BusinessIcon from '@mui/icons-material/Business';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 export const Header = () => {
-  const theme = useTheme();
   return (
     <AppBar position='sticky'>
       <Toolbar>
@@ -16,7 +14,7 @@ export const Header = () => {
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <Button
-            sx={{ display: 'flex', alignItems: 'center' }}
+            variant='text'
             color='inherit'
             component={Link}
             href='/'
@@ -25,6 +23,7 @@ export const Header = () => {
             Anasayfa
           </Button>
           <Button
+            variant='text'
             color='inherit'
             component={Link}
             href='/catalog'
@@ -33,6 +32,7 @@ export const Header = () => {
             Katalog
           </Button>
           <Button
+            variant='text'
             color='inherit'
             component={Link}
             href='/about'
@@ -41,7 +41,8 @@ export const Header = () => {
             Hakkımızda
           </Button>
           <Button
-            color='inherit'
+            variant='outlined'
+            color='primary'
             component={Link}
             href='/contact'
             endIcon={<PhoneIcon fontSize='large' />}
