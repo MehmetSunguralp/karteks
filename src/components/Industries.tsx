@@ -6,33 +6,33 @@ export const Industries = () => {
   const industries = [
     {
       icon: <Construction sx={{ fontSize: 50 }} />,
-      title: 'Construction',
-      description: 'Durable workwear for construction sites',
+      title: 'İnşaat',
+      description: 'İnşaat sahaları için dayanıklı iş kıyafetleri',
     },
     {
       icon: <Factory sx={{ fontSize: 50 }} />,
-      title: 'Manufacturing',
-      description: 'Safety-first clothing for factory workers',
+      title: 'İmalat',
+      description: 'Fabrika çalışanları için güvenlik öncelikli giysiler',
     },
     {
       icon: <Engineering sx={{ fontSize: 50 }} />,
-      title: 'Engineering',
-      description: 'Technical workwear for engineers',
+      title: 'Mühendislik',
+      description: 'Mühendisler için teknik iş kıyafetleri',
     },
     {
       icon: <LocalHospital sx={{ fontSize: 50 }} />,
-      title: 'Healthcare',
-      description: 'Medical uniforms and protective wear',
+      title: 'Sağlık',
+      description: 'Tıbbi üniformalar ve koruyucu giysiler',
     },
     {
       icon: <Restaurant sx={{ fontSize: 50 }} />,
-      title: 'Hospitality',
-      description: 'Professional uniforms for hospitality',
+      title: 'Konaklama',
+      description: 'Konaklama sektörü için profesyonel üniformalar',
     },
     {
       icon: <CleaningServices sx={{ fontSize: 50 }} />,
-      title: 'Cleaning',
-      description: 'Practical workwear for cleaning services',
+      title: 'Temizlik',
+      description: 'Temizlik hizmetleri için pratik iş kıyafetleri',
     },
   ];
 
@@ -47,7 +47,7 @@ export const Industries = () => {
             fontWeight: 700,
           }}
         >
-          Industries We Serve
+          Hizmet Verdiğimiz Sektörler
         </Typography>
         <Typography
           variant='h6'
@@ -57,11 +57,11 @@ export const Industries = () => {
             color: 'text.secondary',
           }}
         >
-          Providing specialized workwear solutions across multiple sectors
+          Birçok sektörde özel iş kıyafeti çözümleri sunuyoruz
         </Typography>
         <Grid container spacing={3}>
           {industries.map((industry, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
               <Paper
                 elevation={3}
                 sx={{

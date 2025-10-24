@@ -3,6 +3,9 @@ import { Box, Container, Typography, Button } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const heroImage =
+  'https://eu.tencatefabrics.com/hs-fs/hubfs/EU%20-%20Images%20website/EU%20-%20Headers/Tecawork%C2%AE-KG-408-Poly-cotton-and-cotton-rich-workwear-fabrics.jpg?width=1920&name=Tecawork%C2%AE-KG-408-Poly-cotton-and-cotton-rich-workwear-fabrics.jpg';
+
 export const Hero = () => {
   return (
     <Box
@@ -26,8 +29,8 @@ export const Hero = () => {
       }}
     >
       <Image
-        src='https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920'
-        alt='Industrial workwear background'
+        src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920'
+        alt='Endüstriyel iş kıyafeti arka planı'
         fill
         style={{ objectFit: 'cover' }}
         priority
@@ -42,7 +45,7 @@ export const Hero = () => {
             mb: 2,
           }}
         >
-          Professional Workwear Solutions
+          Profesyonel İş Kıyafeti Çözümleri
         </Typography>
         <Typography
           variant='h5'
@@ -52,7 +55,7 @@ export const Hero = () => {
             textShadow: '1px 1px 2px rgba(0,0,0,0.8)',
           }}
         >
-          Durable, Comfortable, and Safety-First Workwear for Every Industry
+          Her Sektör İçin Dayanıklı, Konforlu ve Güvenlik Odaklı İş Kıyafetleri
         </Typography>
         <Button
           variant='contained'
@@ -67,7 +70,7 @@ export const Hero = () => {
             fontWeight: 700,
           }}
         >
-          Get a Quote
+          Teklif Alın
         </Button>
       </Container>
     </Box>

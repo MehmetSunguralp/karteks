@@ -20,7 +20,7 @@ export const CallToAction = () => {
             mb: 2,
           }}
         >
-          Ready to Equip Your Team?
+          Ekibinizi Donatmaya Hazır mısınız?
         </Typography>
         <Typography
           variant='h6'
@@ -29,7 +29,7 @@ export const CallToAction = () => {
             mb: 4,
           }}
         >
-          Contact us today for custom orders and bulk pricing
+          Özel siparişler ve toplu fiyatlandırma için bugün bize ulaşın
         </Typography>
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Button
@@ -49,7 +49,7 @@ export const CallToAction = () => {
               },
             }}
           >
-            Contact Us
+            İletişim
           </Button>
           <Button
             variant='outlined'
@@ -69,7 +69,7 @@ export const CallToAction = () => {
               },
             }}
           >
-            View Catalog
+            Katalog Görüntüle
           </Button>
         </Box>
       </Container>

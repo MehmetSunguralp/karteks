@@ -7,27 +7,27 @@ export const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      name: 'Safety Vests',
-      description: 'High-visibility safety vests for construction and industrial work.',
-      image: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=400',
+      name: 'Güvenlik Yelekleri',
+      description: 'İnşaat ve endüstriyel çalışma için yüksek görünürlüklü güvenlik yelekleri.',
+      image: 'https://images.unsplash.com/photo-1640238490074-c00b1353c67f?w=400',
     },
     {
       id: 2,
-      name: 'Work Jackets',
-      description: 'Durable work jackets designed for harsh weather conditions.',
-      image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400',
+      name: 'İş Montları',
+      description: 'Zorlu hava koşulları için tasarlanmış dayanıklı iş montları.',
+      image: 'https://images.unsplash.com/photo-1552327359-d86398116072?w=400',
     },
     {
       id: 3,
-      name: 'Protective Overalls',
-      description: 'Full-body protection for factory and industrial environments.',
-      image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=400',
+      name: 'Koruyucu Tulumlar',
+      description: 'Fabrika ve endüstriyel ortamlar için tam vücut koruması.',
+      image: 'https://images.unsplash.com/photo-1517505246386-7b6def3b0ef6?w=400',
     },
     {
       id: 4,
-      name: 'Work Pants',
-      description: 'Comfortable and durable work pants with reinforced knees.',
-      image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400',
+      name: 'İş Pantolonları',
+      description: 'Takviyeli dizlere sahip konforlu ve dayanıklı iş pantolonları.',
+      image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400',
     },
   ];
 
@@ -42,7 +42,7 @@ export const ProductGrid = () => {
             fontWeight: 700,
           }}
         >
-          Our Product Range
+          Ürün Yelpazemiz
         </Typography>
         <Typography
           variant='h6'
@@ -52,7 +52,7 @@ export const ProductGrid = () => {
             color: 'text.secondary',
           }}
         >
-          Explore our comprehensive collection of professional workwear
+          Kapsamlı profesyonel iş kıyafeti koleksiyonumuzu keşfedin
         </Typography>
         <Grid container spacing={4}>
           {products.map((product) => (
@@ -69,7 +69,12 @@ export const ProductGrid = () => {
                 }}
               >
                 <Box sx={{ position: 'relative', height: 240 }}>
-                  <Image src={product.image} alt={product.name} fill style={{ objectFit: 'cover' }} />
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
                 </Box>
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant='h5' component='div' sx={{ fontWeight: 600 }}>
@@ -97,7 +102,7 @@ export const ProductGrid = () => {
               fontWeight: 600,
             }}
           >
-            View Full Catalog
+            Tüm Kataloğu Görüntüle
           </Button>
         </Box>
       </Container>

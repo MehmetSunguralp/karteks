@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <Box component='main'>
       <Hero />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <ProductGrid />
-      {/* <Industries /> */}
+      <Industries />
       <CallToAction />
     </Box>
   );

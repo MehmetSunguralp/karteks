@@ -6,18 +6,18 @@ export const AboutUs = () => {
   const features = [
     {
       icon: <Build sx={{ fontSize: 60, color: 'primary.main' }} />,
-      title: 'Premium Quality',
-      description: 'Manufactured with the highest quality materials and craftsmanship.',
+      title: 'Üstün Kalite',
+      description: 'En yüksek kaliteli malzemeler ve işçilikle üretilmiştir.',
     },
     {
       icon: <Security sx={{ fontSize: 60, color: 'primary.main' }} />,
-      title: 'Safety First',
-      description: 'All our products meet international safety standards and certifications.',
+      title: 'Önce Güvenlik',
+      description: 'Tüm ürünlerimiz uluslararası güvenlik standartlarını ve sertifikalarını karşılar.',
     },
     {
       icon: <LocalShipping sx={{ fontSize: 60, color: 'primary.main' }} />,
-      title: 'Fast Delivery',
-      description: 'Quick turnaround times and reliable delivery to your location.',
+      title: 'Hızlı Teslimat',
+      description: 'Hızlı teslim süreleri ve konumunuza güvenilir teslimat.',
     },
   ];
 
@@ -33,7 +33,7 @@ export const AboutUs = () => {
             color: 'primary.main',
           }}
         >
-          Why Choose Karteks?
+          Neden Karteks?
         </Typography>
         <Typography
           variant='h6'
@@ -43,7 +43,7 @@ export const AboutUs = () => {
             color: 'text.secondary',
           }}
         >
-          We manufacture high-quality workwear for construction, factory, and technical fields.
+          İnşaat, fabrika ve teknik alanlar için yüksek kaliteli iş kıyafetleri üretiyoruz.
         </Typography>
         <Grid container spacing={4}>
           {features.map((feature, index) => (
