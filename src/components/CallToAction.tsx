@@ -7,7 +7,7 @@ export const CallToAction = () => {
     <Box
       sx={{
         py: 10,
-        background: 'linear-gradient(135deg, #ff8c00 0%, #ff6f00 100%)',
+        bgcolor: 'primary.main',
         textAlign: 'center',
       }}
     >

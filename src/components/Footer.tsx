@@ -171,7 +171,7 @@ export const Footer = () => {
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                 <Phone sx={{ fontSize: 18, color: 'primary.main' }} />
                 <Typography variant='body2' color='text.secondary'>
-                  +90 536 220 14 06
+                  +90 542 780 79 23
                 </Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>

@@ -77,7 +77,12 @@ export const ProductGrid = () => {
                   />
                 </Box>
                 <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography gutterBottom variant='h5' component='div' sx={{ fontWeight: 600 }}>
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                    sx={{ fontWeight: 600, height: '2lh' }}
+                  >
                     {product.name}
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>

@@ -40,6 +40,7 @@ export const Hero = () => {
           variant='h1'
           sx={{
             color: 'white',
+            textTransform: 'uppercase',
             fontWeight: 900,
             textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
             mb: 2,
