@@ -1,25 +1,25 @@
 import { createTheme } from '@mui/material';
 
-const lightTheme = createTheme({
+const darkTheme = createTheme({
   palette: {
-    mode: 'light',
+    mode: 'dark',
     primary: {
-      main: '#ff4a00',
+      main: '#f77f00',
     },
     secondary: {
       main: '#ff4a00',
     },
     background: {
-      default: '#fafafa',
-      paper: '#f7eae1',
+      default: '#000814',
+      paper: '#001d3d',
     },
     text: {
-      primary: '#252525',
-      secondary: '#656565',
+      primary: '#ffffff',
+      secondary: '#e5e5e5',
     },
   },
   typography: {
-    fontFamily: 'Poppins, sans-serif',
+    fontFamily: 'Inter, sans-serif',
     h1: {
       fontSize: '2.5rem',
       fontWeight: 700,
@@ -37,4 +37,4 @@ const lightTheme = createTheme({
   },
 });
 
-export default lightTheme;
+export default darkTheme;

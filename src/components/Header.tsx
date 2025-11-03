@@ -24,7 +24,7 @@ export const Header = () => {
             endIcon={<HomeFilledIcon fontSize='large' />}
             sx={{ color: 'text.primary' }}
           >
-            Anasayfa
+            <Typography>Anasayfa</Typography>
           </Button>
           <Button
             variant='text'
@@ -33,7 +33,7 @@ export const Header = () => {
             endIcon={<CheckroomIcon fontSize='large' />}
             sx={{ color: 'text.primary' }}
           >
-            Katalog
+            <Typography>Katalog</Typography>
           </Button>
           <Button
             variant='text'
@@ -42,7 +42,7 @@ export const Header = () => {
             endIcon={<BusinessIcon fontSize='large' />}
             sx={{ color: 'text.primary' }}
           >
-            Hakkımızda
+            <Typography>Hakkımızda</Typography>
           </Button>
           <Button
             variant='outlined'
@@ -50,7 +50,7 @@ export const Header = () => {
             href='/contact'
             endIcon={<PhoneIcon fontSize='large' />}
           >
-            İletişim
+            <Typography>İletişim</Typography>
           </Button>
         </Box>
       </Toolbar>

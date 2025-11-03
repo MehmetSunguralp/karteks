@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import './globals.scss';
 import { Providers } from './providers';
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-poppins',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='tr'>
-      <body className={poppins.className}>
+      <body className={inter.className}>
         <AppRouterCacheProvider>
           <Providers children={children} />
         </AppRouterCacheProvider>
