@@ -10,6 +10,7 @@ export interface Product {
     material?: string;
     sizes?: string[];
     colors?: string[];
+    features?: string[];
   };
 }
 
@@ -26,8 +27,8 @@ export const products: Product[] = [
     details: {
       material: '100% Pamuk',
       sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      colors: ['Beyaz', 'Lacivert', 'Siyah']
-    }
+      colors: ['Beyaz', 'Lacivert', 'Siyah'],
+    },
   },
   {
     id: 2,
@@ -40,8 +41,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Pamuk Karışımı',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Mavi', 'Kırmızı', 'Beyaz']
-    }
+      colors: ['Mavi', 'Kırmızı', 'Beyaz'],
+    },
   },
   {
     id: 3,
@@ -54,8 +55,8 @@ export const products: Product[] = [
     details: {
       material: '100% Pamuk',
       sizes: ['M', 'L', 'XL', 'XXL'],
-      colors: ['Siyah', 'Lacivert', 'Gri']
-    }
+      colors: ['Siyah', 'Lacivert', 'Gri'],
+    },
   },
   // Pantolons
   {
@@ -69,8 +70,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Pamuk Karışımı',
       sizes: ['30', '32', '34', '36', '38', '40', '42'],
-      colors: ['Siyah', 'Lacivert', 'Bej']
-    }
+      colors: ['Siyah', 'Lacivert', 'Bej'],
+    },
   },
   {
     id: 5,
@@ -83,22 +84,30 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Pamuk Karışımı',
       sizes: ['30', '32', '34', '36', '38'],
-      colors: ['Siyah', 'Lacivert']
-    }
+      colors: ['Siyah', 'Lacivert'],
+    },
   },
   {
     id: 6,
-    name: 'Cargo İş Pantolonu',
-    description: 'Fonksiyonel cargo pantolon. Çok sayıda cep ile pratik kullanım.',
-    shortDescription: 'Fonksiyonel cargo pantolon, çok sayıda cep.',
-    image: 'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=500&h=500&fit=crop',
+    name: 'Kargo İş Pantolonu',
+    description: `Profesyonel sahalarda yüksek konfor ve dayanıklılık sunan bu siyah reflektörlü iş pantolonu, hem güvenlik hem de rahatlık odaklı tasarlanmıştır.
+Geniş kargo cepleri alet ve kişisel eşyalar için ekstra depolama alanı sağlar. Reflektör şeritleri sayesinde düşük ışık koşullarında görünürlüğü artırır.
+Pamuk-polyester karışımı kumaşı, uzun süreli kullanımlarda nefes alabilirlik ve sağlamlık dengesini korur.`,
+    shortDescription: 'Fonksiyonel kargo pantolon, çok sayıda cep.',
+    image: 'https://i.hizliresim.com/64t5otq.jpeg',
     category: 'pantolon',
     price: 420,
     details: {
       material: '100% Pamuk',
       sizes: ['30', '32', '34', '36', '38', '40'],
-      colors: ['Haki', 'Siyah', 'Bej']
-    }
+      colors: ['Haki', 'Siyah', 'Bej'],
+      features: [
+        'Kumaş Türü: Dayanıklı pamuk-polyester karışımı',
+        'Kumaş Gramajı: 260 gr/m²',
+        'Kesim: Rahat kalıp (Regular Fit)',
+        'Detaylar: Çift reflektör şerit, yan ve arka cepler, kapaklı kargo cep',
+      ],
+    },
   },
   // Tulum
   {
@@ -112,8 +121,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Kotton Karışımı',
       sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      colors: ['Mavi', 'Gri', 'Turuncu']
-    }
+      colors: ['Mavi', 'Gri', 'Turuncu'],
+    },
   },
   {
     id: 8,
@@ -126,8 +135,8 @@ export const products: Product[] = [
     details: {
       material: '100% Pamuk',
       sizes: ['M', 'L', 'XL', 'XXL'],
-      colors: ['Mavi', 'Gri']
-    }
+      colors: ['Mavi', 'Gri'],
+    },
   },
   {
     id: 9,
@@ -140,8 +149,8 @@ export const products: Product[] = [
     details: {
       material: 'Alev Geciktirici Kumaş',
       sizes: ['S', 'M', 'L', 'XL'],
-      colors: ['Turuncu', 'Sarı', 'Mavi']
-    }
+      colors: ['Turuncu', 'Sarı', 'Mavi'],
+    },
   },
   // Yelek
   {
@@ -155,8 +164,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester',
       sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      colors: ['Turuncu', 'Sarı', 'Lime']
-    }
+      colors: ['Turuncu', 'Sarı', 'Lime'],
+    },
   },
   {
     id: 11,
@@ -169,8 +178,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Pamuk Karışımı',
       sizes: ['M', 'L', 'XL', 'XXL'],
-      colors: ['Siyah', 'Lacivert', 'Gri']
-    }
+      colors: ['Siyah', 'Lacivert', 'Gri'],
+    },
   },
   {
     id: 12,
@@ -183,8 +192,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-İzolasyon',
       sizes: ['M', 'L', 'XL'],
-      colors: ['Siyah', 'Gri']
-    }
+      colors: ['Siyah', 'Gri'],
+    },
   },
   // Mont
   {
@@ -198,8 +207,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Polar',
       sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-      colors: ['Siyah', 'Lacivert', 'Gri']
-    }
+      colors: ['Siyah', 'Lacivert', 'Gri'],
+    },
   },
   {
     id: 14,
@@ -212,8 +221,8 @@ export const products: Product[] = [
     details: {
       material: 'Polyester',
       sizes: ['M', 'L', 'XL', 'XXL'],
-      colors: ['Siyah', 'Mavi', 'Turuncu']
-    }
+      colors: ['Siyah', 'Mavi', 'Turuncu'],
+    },
   },
   {
     id: 15,
@@ -226,8 +235,7 @@ export const products: Product[] = [
     details: {
       material: 'Polyester-Polar',
       sizes: ['M', 'L', 'XL', 'XXL'],
-      colors: ['Siyah', 'Lacivert']
-    }
-  }
+      colors: ['Siyah', 'Lacivert'],
+    },
+  },
 ];
-

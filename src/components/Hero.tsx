@@ -11,7 +11,7 @@ export const Hero = () => {
     <Box
       sx={{
         position: 'relative',
-        height: '70vh',
+        height: '100dvh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -29,7 +29,7 @@ export const Hero = () => {
       }}
     >
       <Image
-        src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1920'
+        src='https://www.cws.com/sites/default/files/2024-11/cws_workwear_header.png'
         alt='Endüstriyel iş kıyafeti arka planı'
         fill
         style={{ objectFit: 'cover' }}
@@ -46,7 +46,7 @@ export const Hero = () => {
             mb: 2,
           }}
         >
-          Profesyonel İş Kıyafeti Çözümleri
+          İş Güvenliğiniz İçin Profesyonel Çözümler
         </Typography>
         <Typography
           variant='h5'

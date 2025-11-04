@@ -89,11 +89,6 @@ export default function ProductPage() {
                 <Typography variant='h3' component='h1' sx={{ mb: 2, fontWeight: 700 }}>
                   {product.name}
                 </Typography>
-                {product.price && (
-                  <Typography variant='h5' color='primary.main' sx={{ mb: 2, fontWeight: 600 }}>
-                    {product.price} ₺
-                  </Typography>
-                )}
               </Box>
 
               <Divider />
@@ -102,7 +97,7 @@ export default function ProductPage() {
                 <Typography variant='h6' sx={{ mb: 2, fontWeight: 600 }}>
                   Açıklama
                 </Typography>
-                <Typography variant='body1' color='text.secondary' paragraph>
+                <Typography variant='body1' color='text.secondary' textAlign={'justify'}>
                   {product.description}
                 </Typography>
               </Box>
@@ -119,19 +114,6 @@ export default function ProductPage() {
                         Malzeme:
                       </Typography>
                       <Typography variant='body1'>{product.details.material}</Typography>
-                    </Box>
-                  )}
-
-                  {product.details.sizes && (
-                    <Box sx={{ mb: 2 }}>
-                      <Typography variant='subtitle2' color='text.secondary' sx={{ mb: 1 }}>
-                        Bedenler:
-                      </Typography>
-                      <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                        {product.details.sizes.map((size) => (
-                          <Chip key={size} label={size} variant='outlined' />
-                        ))}
-                      </Box>
                     </Box>
                   )}
 
@@ -164,9 +146,18 @@ export default function ProductPage() {
               </Box>
             </Box>
           </Grid>
+          <Box>
+            <Typography variant='h2'>Detay</Typography>
+            {product.details.features && (
+              <ul>
+                {product.details.features.map((feature, index) => {
+                  return <li key={index}>{feature}</li>;
+                })}
+              </ul>
+            )}
+          </Box>
         </Grid>
       </Container>
     </Box>
   );
 }
-
