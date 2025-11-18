@@ -104,10 +104,19 @@ export const ProductGrid = () => {
                       background:
                         'linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%)',
                     },
+                    '& .product-image': {
+                      transform: 'scale(1.1)',
+                    },
                   },
                 }}
               >
-                <Image src={product.image} alt={product.name} fill style={{ objectFit: 'cover' }} />
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className='product-image'
+                  style={{ objectFit: 'cover', transition: 'transform 0.2s ease-in-out' }}
+                />
                 {/* Gradient overlay for better text readability */}
                 <Box
                   className='product-overlay'
@@ -120,7 +129,7 @@ export const ProductGrid = () => {
                       'linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%)',
                     p: 2,
                     pt: 3,
-                    transition: 'background 0.3s ease-in-out',
+                    transition: 'background 0.2s ease-in-out',
                   }}
                 >
                   {/* Title - always visible */}

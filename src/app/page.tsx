@@ -4,15 +4,24 @@ import { AboutUs } from '@/components/AboutUs';
 import { ProductGrid } from '@/components/ProductGrid';
 import { Industries } from '@/components/Industries';
 import { CallToAction } from '@/components/CallToAction';
+import { FadeInSection } from '@/components/FadeInSection';
 
 const Home = () => {
   return (
-    <Box component='main'>
+    <Box component='main' sx={{ overflowX: 'hidden', width: '100%' }}>
       <Hero />
-      <AboutUs />
-      <ProductGrid />
-      <Industries />
-      <CallToAction />
+      <FadeInSection delay={400} direction='right'>
+        <AboutUs />
+      </FadeInSection>
+      <FadeInSection delay={400} direction='left'>
+        <ProductGrid />
+      </FadeInSection>
+      <FadeInSection delay={400} direction='right'>
+        <Industries />
+      </FadeInSection>
+      <FadeInSection delay={400} direction='left'>
+        <CallToAction />
+      </FadeInSection>
     </Box>
   );
 };

@@ -76,7 +76,7 @@ export const Industries = () => {
                   p: 3,
                   textAlign: 'center',
                   height: '100%',
-                  transition: 'all 0.3s ease-in-out',
+                  transition: 'all 0.1s ease-in-out',
                   '&:hover': {
                     transform: 'translateY(5px)',
                     backgroundColor: 'background.paper',
