@@ -1,6 +1,5 @@
 'use client';
-import { ThemeProvider } from '@mui/material';
-import { CssBaseline } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import lightTheme from '../styles/theme';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';

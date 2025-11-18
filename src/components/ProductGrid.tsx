@@ -1,5 +1,5 @@
 'use client';
-import { Container, Grid, Card, CardContent, Typography, Box, Button } from '@mui/material';
+import { Container, Card, Typography, Box, Button } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,25 +9,27 @@ export const ProductGrid = () => {
       id: 1,
       name: 'Güvenlik Yelekleri',
       description: 'İnşaat ve endüstriyel çalışma için yüksek görünürlüklü güvenlik yelekleri.',
-      image: 'https://images.unsplash.com/photo-1640238490074-c00b1353c67f?w=400',
+      image: 'https://cdn.ecommercedns.uk/files/6/263846/6/42899866/rg469-ls00-2024.jpg',
     },
     {
       id: 2,
       name: 'İş Montları',
       description: 'Zorlu hava koşulları için tasarlanmış dayanıklı iş montları.',
-      image: 'https://images.unsplash.com/photo-1552327359-d86398116072?w=400',
+      image:
+        'https://formatek.com.tr/wp-content/uploads/2025/09/formatek-katalog-20254-1-10-600x600.jpg',
     },
     {
       id: 3,
       name: 'Koruyucu Tulumlar',
       description: 'Fabrika ve endüstriyel ortamlar için tam vücut koruması.',
-      image: 'https://images.unsplash.com/photo-1517505246386-7b6def3b0ef6?w=400',
+      image: 'https://cobra-workwear.co.uk/cdn/shop/collections/dv002.jpg?v=1700128618&width=1296',
     },
     {
       id: 4,
       name: 'İş Pantolonları',
       description: 'Takviyeli dizlere sahip konforlu ve dayanıklı iş pantolonları.',
-      image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400',
+      image:
+        'https://insulationmerchant.com/cdn/shop/files/TIMCO_Workman_Trousers_Grey_Black_-_Multiple_Sizes_Insulation_Merchant_3.jpg?v=1738316252&width=750',
     },
   ];
 
@@ -54,48 +56,109 @@ export const ProductGrid = () => {
         >
           Kapsamlı profesyonel iş kıyafeti koleksiyonumuzu keşfedin
         </Typography>
-        <Grid container spacing={4}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: 4,
+            justifyContent: 'center',
+          }}
+        >
           {products.map((product) => (
-            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={product.id}>
-              <Card
+            <Card
+              key={product.id}
+              sx={{
+                width: {
+                  xs: 'calc(50% - 16px)',
+                  sm: 'calc(50% - 16px)',
+                  md: 'calc(25% - 24px)',
+                },
+                flexShrink: 0,
+                display: 'flex',
+                flexDirection: 'column',
+                overflow: 'hidden',
+              }}
+            >
+              <Box
                 sx={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  transition: 'transform 0.3s ease-in-out',
+                  position: 'relative',
+                  width: '100%',
+                  height: {
+                    xs: '300px',
+                    sm: '350px',
+                    lg: '500px',
+                    xl: '600px',
+                  },
+                  aspectRatio: {
+                    md: '2/3',
+                  },
+                  cursor: 'pointer',
+                  overflow: 'hidden',
                   '&:hover': {
-                    transform: 'translateY(-8px)',
+                    '& .product-description': {
+                      maxHeight: '100px',
+                      opacity: 1,
+                      marginTop: '8px',
+                    },
+                    '& .product-overlay': {
+                      background:
+                        'linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%)',
+                    },
                   },
                 }}
               >
-                <Box sx={{ position: 'relative', height: 240 }}>
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    style={{ objectFit: 'cover' }}
-                  />
-                </Box>
-                <CardContent sx={{ flexGrow: 1 }}>
+                <Image src={product.image} alt={product.name} fill style={{ objectFit: 'cover' }} />
+                {/* Gradient overlay for better text readability */}
+                <Box
+                  className='product-overlay'
+                  sx={{
+                    position: 'absolute',
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    background:
+                      'linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%)',
+                    p: 2,
+                    pt: 3,
+                    transition: 'background 0.3s ease-in-out',
+                  }}
+                >
+                  {/* Title - always visible */}
                   <Typography
-                    gutterBottom
                     variant='h5'
                     component='div'
-                    sx={{ fontWeight: 600, height: '2lh' }}
+                    sx={{
+                      fontWeight: 600,
+                      color: 'white',
+                      mb: 1,
+                    }}
                   >
                     {product.name}
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  {/* Description - appears on hover */}
+                  <Typography
+                    variant='body2'
+                    className='product-description'
+                    sx={{
+                      color: 'rgba(255, 255, 255, 0.9)',
+                      maxHeight: 0,
+                      opacity: 0,
+                      overflow: 'hidden',
+                      transition:
+                        'max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out',
+                      marginTop: 0,
+                    }}
+                  >
                     {product.description}
                   </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+                </Box>
+              </Box>
+            </Card>
           ))}
-        </Grid>
+        </Box>
         <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Button
-            variant='outlined'
+            variant='contained'
             color='primary'
             size='large'
             component={Link}
@@ -105,6 +168,7 @@ export const ProductGrid = () => {
               py: 1.5,
               fontSize: '1rem',
               fontWeight: 600,
+              color: 'white',
             }}
           >
             Tüm Kataloğu Görüntüle

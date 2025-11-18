@@ -12,7 +12,8 @@ export const AboutUs = () => {
     {
       icon: <Security sx={{ fontSize: 60, color: 'primary.main' }} />,
       title: 'Önce Güvenlik',
-      description: 'Tüm ürünlerimiz uluslararası güvenlik standartlarını ve sertifikalarını karşılar.',
+      description:
+        'Tüm ürünlerimiz uluslararası güvenlik standartlarını ve sertifikalarını karşılar.',
     },
     {
       icon: <LocalShipping sx={{ fontSize: 60, color: 'primary.main' }} />,
@@ -47,7 +48,7 @@ export const AboutUs = () => {
         </Typography>
         <Grid container spacing={4}>
           {features.map((feature, index) => (
-            <Grid size={{ xs: 12, md: 4 }} key={index}>
+            <Grid size={{ xs: 12, md: 4 }} key={feature.title}>
               <Box sx={{ textAlign: 'center' }}>
                 {feature.icon}
                 <Typography variant='h5' sx={{ mt: 2, mb: 1, fontWeight: 600 }}>

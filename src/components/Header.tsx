@@ -7,7 +7,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 export const Header = () => {
   return (
-    <AppBar position='sticky' sx={{ bgcolor: 'background.paper' }}>
+    <AppBar position='sticky' sx={{ bgcolor: 'background.default' }}>
       <Toolbar>
         <Typography
           variant='h6'

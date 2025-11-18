@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang='tr'>
       <body className={inter.className}>
         <AppRouterCacheProvider>
-          <Providers children={children} />
+          <Providers>{children}</Providers>
         </AppRouterCacheProvider>
       </body>
     </html>

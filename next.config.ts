@@ -27,6 +27,22 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'i.hizliresim.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.ecommercedns.uk',
+      },
+      {
+        protocol: 'https',
+        hostname: 'formatek.com.tr',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cobra-workwear.co.uk',
+      },
+      {
+        protocol: 'https',
+        hostname: 'insulationmerchant.com',
+      },
     ],
   },
 };
