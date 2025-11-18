@@ -1,18 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import {
-  Box,
-  Container,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Grid,
-} from '@mui/material';
-import Link from 'next/link';
+import { Box, Container, Typography, Button, Grid } from '@mui/material';
 import { products } from '@/data/productsData';
+import { CatalogCard } from '@/components/CatalogCard';
+import { FadeInSection } from '@/components/FadeInSection';
 
 type Category =
   | 'pantolon'
@@ -94,51 +86,15 @@ export default function CatalogPage() {
         <Grid container spacing={4}>
           {displayedProducts.map((product) => (
             <Grid size={{ xs: 12, sm: 6, md: 4 }} key={product.id}>
-              <Card
-                sx={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
-                  '&:hover': {
-                    transform: 'translateY(-8px)',
-                    boxShadow: 6,
-                  },
-                }}
-              >
-                <CardMedia
-                  component='img'
-                  height='300'
+              <FadeInSection delay={400} direction='bottom' threshold={0.1}>
+                <CatalogCard
+                  id={product.id}
+                  name={product.name}
+                  description={product.shortDescription}
                   image={product.image}
-                  alt={product.name}
-                  sx={{ objectFit: 'cover' }}
+                  variant='catalog'
                 />
-                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                  <Typography
-                    variant='h6'
-                    component='h2'
-                    sx={{ mb: 2, fontWeight: 600, color: 'text.primary' }}
-                  >
-                    {product.name}
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary' sx={{ mb: 3, flexGrow: 1 }}>
-                    {product.shortDescription}
-                  </Typography>
-                  <Button
-                    variant='contained'
-                    component={Link}
-                    href={`/product?id=${product.id}`}
-                    fullWidth
-                    sx={{
-                      mt: 'auto',
-                      textTransform: 'none',
-                      fontWeight: 600,
-                    }}
-                  >
-                    Detay
-                  </Button>
-                </CardContent>
-              </Card>
+              </FadeInSection>
             </Grid>
           ))}
         </Grid>

@@ -6,12 +6,14 @@ interface FadeInSectionProps extends BoxProps {
   children: React.ReactNode;
   delay?: number;
   direction?: 'left' | 'top' | 'bottom' | 'right';
+  threshold?: number;
 }
 
 export const FadeInSection = ({
   children,
   delay = 0,
   direction = 'bottom',
+  threshold = 0.4,
   ...props
 }: FadeInSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +29,7 @@ export const FadeInSection = ({
         }
       },
       {
-        threshold: 0.4, // Trigger when 30% of the element is visible
+        threshold: threshold, // Trigger when 30% of the element is visible
         rootMargin: '0px 0px -50px 0px', // Trigger slightly before element enters viewport
       },
     );

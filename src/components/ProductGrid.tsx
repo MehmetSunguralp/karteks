@@ -1,7 +1,7 @@
 'use client';
-import { Container, Card, Typography, Box, Button } from '@mui/material';
-import Image from 'next/image';
+import { Container, Typography, Box, Button } from '@mui/material';
 import Link from 'next/link';
+import { CatalogCard } from './CatalogCard';
 
 export const ProductGrid = () => {
   const products = [
@@ -65,104 +65,14 @@ export const ProductGrid = () => {
           }}
         >
           {products.map((product) => (
-            <Card
+            <CatalogCard
               key={product.id}
-              sx={{
-                width: {
-                  xs: 'calc(50% - 16px)',
-                  sm: 'calc(50% - 16px)',
-                  md: 'calc(25% - 24px)',
-                },
-                flexShrink: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                overflow: 'hidden',
-              }}
-            >
-              <Box
-                sx={{
-                  position: 'relative',
-                  width: '100%',
-                  height: {
-                    xs: '300px',
-                    sm: '350px',
-                    lg: '500px',
-                    xl: '600px',
-                  },
-                  aspectRatio: {
-                    md: '2/3',
-                  },
-                  cursor: 'pointer',
-                  overflow: 'hidden',
-                  '&:hover': {
-                    '& .product-description': {
-                      maxHeight: '100px',
-                      opacity: 1,
-                      marginTop: '8px',
-                    },
-                    '& .product-overlay': {
-                      background:
-                        'linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.2) 100%)',
-                    },
-                    '& .product-image': {
-                      transform: 'scale(1.1)',
-                    },
-                  },
-                }}
-              >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className='product-image'
-                  style={{ objectFit: 'cover', transition: 'transform 0.2s ease-in-out' }}
-                />
-                {/* Gradient overlay for better text readability */}
-                <Box
-                  className='product-overlay'
-                  sx={{
-                    position: 'absolute',
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    background:
-                      'linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%)',
-                    p: 2,
-                    pt: 3,
-                    transition: 'background 0.2s ease-in-out',
-                  }}
-                >
-                  {/* Title - always visible */}
-                  <Typography
-                    variant='h5'
-                    component='div'
-                    sx={{
-                      fontWeight: 600,
-                      color: 'white',
-                      mb: 1,
-                    }}
-                  >
-                    {product.name}
-                  </Typography>
-                  {/* Description - appears on hover */}
-                  <Typography
-                    variant='body2'
-                    className='product-description'
-                    sx={{
-                      color: 'rgba(255, 255, 255, 0.9)',
-                      maxHeight: 0,
-                      opacity: 0,
-                      overflow: 'hidden',
-                      transition:
-                        'max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out',
-                      marginTop: 0,
-                    }}
-                  >
-                    {product.description}
-                  </Typography>
-                </Box>
-              </Box>
-            </Card>
+              id={product.id}
+              name={product.name}
+              description={product.description}
+              image={product.image}
+              variant="homepage"
+            />
           ))}
         </Box>
         <Box sx={{ textAlign: 'center', mt: 6 }}>
