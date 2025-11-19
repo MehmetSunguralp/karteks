@@ -75,6 +75,7 @@ export const ProductGrid = () => {
               description={product.description}
               image={product.image}
               variant="homepage"
+              clickable={false}
             />
           ))}
         </Box>

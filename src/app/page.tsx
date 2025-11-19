@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <Box component='main' sx={{ overflowX: 'hidden', width: '100%' }}>
       <Hero />
-      <FadeInSection delay={400} direction='right'>
+      <FadeInSection delay={400} direction='right' threshold={0.5}>
         <AboutUs />
       </FadeInSection>
       <FadeInSection delay={400} direction='left'>
