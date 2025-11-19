@@ -20,32 +20,67 @@ export const FadeInSection = ({
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Disconnect after first trigger to prevent re-animation
-          observer.disconnect();
-        }
-      },
-      {
-        threshold: threshold, // Trigger when 30% of the element is visible
-        rootMargin: '0px 0px -50px 0px', // Trigger slightly before element enters viewport
-      },
-    );
-
     const currentRef = ref.current;
-    if (currentRef) {
+    if (!currentRef) return;
+
+    // Check if element is already in viewport on mount
+    const checkInitialVisibility = () => {
+      const rect = currentRef.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+      
+      // Check if element is visible in viewport (with some margin)
+      const isInViewport =
+        rect.top < windowHeight + 100 && // Add margin for better detection
+        rect.bottom > -100 &&
+        rect.left < windowWidth &&
+        rect.right > 0;
+
+      if (isInViewport) {
+        setIsVisible(true);
+        return true;
+      }
+      return false;
+    };
+
+    // Use requestAnimationFrame to ensure layout is complete
+    let observer: IntersectionObserver | null = null;
+    
+    const rafId = requestAnimationFrame(() => {
+      // Check immediately after layout
+      if (checkInitialVisibility()) {
+        return; // Already visible, no need for observer
+      }
+
+      // Use lower threshold for mobile devices
+      const isMobile = window.innerWidth < 768;
+      const effectiveThreshold = isMobile ? Math.min(threshold, 0.1) : threshold;
+
+      observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            // Disconnect after first trigger to prevent re-animation
+            observer?.disconnect();
+          }
+        },
+        {
+          threshold: effectiveThreshold,
+          rootMargin: isMobile ? '50px' : '0px 0px -50px 0px', // More lenient on mobile
+        },
+      );
+
       observer.observe(currentRef);
-    }
+    });
 
     return () => {
-      if (currentRef) {
+      cancelAnimationFrame(rafId);
+      if (observer) {
         observer.unobserve(currentRef);
+        observer.disconnect();
       }
-      observer.disconnect();
     };
-  }, []);
+  }, [threshold]);
 
   // Calculate initial transform based on direction
   const getInitialTransform = () => {

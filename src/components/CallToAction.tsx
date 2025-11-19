@@ -6,7 +6,7 @@ export const CallToAction = () => {
   return (
     <Box
       sx={{
-        py: 10,
+        py: { xs: 6, sm: 8, md: 10 },
         bgcolor: 'primary.main',
         textAlign: 'center',
       }}
@@ -17,7 +17,9 @@ export const CallToAction = () => {
           sx={{
             color: 'white',
             fontWeight: 700,
-            mb: 2,
+            mb: { xs: 1.5, md: 2 },
+            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
+            px: { xs: 2, sm: 0 },
           }}
         >
           Ekibinizi Donatmaya Hazır mısınız?
@@ -26,23 +28,33 @@ export const CallToAction = () => {
           variant='h6'
           sx={{
             color: 'rgba(255, 255, 255, 0.9)',
-            mb: 4,
+            mb: { xs: 3, md: 4 },
+            fontSize: { xs: '0.875rem', sm: '1rem', md: '1.25rem' },
+            px: { xs: 2, sm: 0 },
           }}
         >
           Özel siparişler ve toplu fiyatlandırma için bugün bize ulaşın
         </Typography>
-        <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            gap: { xs: 1.5, sm: 2 },
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            px: { xs: 2, sm: 0 },
+          }}
+        >
           <Button
             variant='contained'
-            size='large'
+            size='medium'
             component={Link}
             href='/contact'
             sx={{
               backgroundColor: 'white',
               color: 'primary.main',
-              px: 4,
-              py: 1.5,
-              fontSize: '1rem',
+              px: { xs: 3, sm: 4 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: '0.875rem', sm: '1rem' },
               fontWeight: 700,
               '&:hover': {
                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -53,15 +65,15 @@ export const CallToAction = () => {
           </Button>
           <Button
             variant='outlined'
-            size='large'
+            size='medium'
             component={Link}
             href='/catalog'
             sx={{
               borderColor: 'white',
               color: 'white',
-              px: 4,
-              py: 1.5,
-              fontSize: '1rem',
+              px: { xs: 3, sm: 4 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: '0.875rem', sm: '1rem' },
               fontWeight: 700,
               '&:hover': {
                 borderColor: 'white',

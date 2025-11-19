@@ -36,7 +36,9 @@ export const Hero = () => {
         style={{ objectFit: 'cover' }}
         priority
       />
-      <Container sx={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+      <Container
+        sx={{ position: 'relative', zIndex: 2, textAlign: 'center', px: { xs: 2, sm: 3 } }}
+      >
         <FadeInSection delay={200}>
           <Typography
             variant='h1'
@@ -46,6 +48,7 @@ export const Hero = () => {
               fontWeight: 900,
               textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
               mb: 2,
+              fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem', lg: '3rem' },
             }}
           >
             İş Güvenliğiniz İçin Profesyonel Çözümler
@@ -54,8 +57,10 @@ export const Hero = () => {
             variant='h5'
             sx={{
               color: 'white',
-              mb: 4,
+              mb: { xs: 3, md: 4 },
               textShadow: '1px 1px 2px rgba(0,0,0,0.8)',
+              fontSize: { xs: '0.875rem', sm: '1rem', md: '1.25rem' },
+              px: { xs: 1, sm: 0 },
             }}
           >
             Her Sektör İçin Dayanıklı, Konforlu ve Güvenlik Odaklı İş Kıyafetleri
@@ -63,13 +68,13 @@ export const Hero = () => {
           <Button
             variant='contained'
             color='primary'
-            size='large'
+            size='medium'
             component={Link}
             href='/contact'
             sx={{
-              px: 4,
-              py: 1.5,
-              fontSize: '1.5rem',
+              px: { xs: 3, sm: 4 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: '0.875rem', sm: '1rem', md: '1.25rem' },
               fontWeight: 700,
               color: 'white',
             }}

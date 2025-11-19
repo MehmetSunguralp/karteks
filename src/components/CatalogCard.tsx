@@ -2,7 +2,6 @@
 import { Card, Typography, Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-
 interface CatalogCardProps {
   id: number;
   name: string;
@@ -27,9 +26,9 @@ export const CatalogCard = ({
     variant === 'homepage'
       ? {
           width: {
-            xs: 'calc(50% - 16px)',
-            sm: 'calc(50% - 16px)',
-            md: 'calc(25% - 24px)',
+            xs: '100%', // Single column on 320px
+            sm: 'calc(50% - 12px)', // 2 columns on sm
+            md: 'calc(25% - 24px)', // 4 columns on md+
           },
         }
       : {
@@ -73,15 +72,17 @@ export const CatalogCard = ({
           cursor: 'pointer',
           overflow: 'hidden',
           '&:hover': {
-            '& .product-image': {
-              transform: 'scale(1.1)',
-            },
-            '& .hover-overlay': {
-              opacity: 1,
-            },
-            '& .detay-text': {
-              opacity: 1,
-              transform: 'translateY(0)',
+            '@media (hover: hover)': {
+              '& .product-image': {
+                transform: 'scale(1.1)',
+              },
+              '& .hover-overlay': {
+                opacity: 1,
+              },
+              '& .detay-text': {
+                opacity: 1,
+                transform: 'translateY(0)',
+              },
             },
           },
         }}
@@ -151,6 +152,7 @@ export const CatalogCard = ({
               fontWeight: 600,
               color: 'white',
               mb: 1,
+              fontSize: { xs: '1rem', sm: '1.125rem', md: '1.5rem' },
             }}
           >
             {name}
@@ -162,6 +164,7 @@ export const CatalogCard = ({
             sx={{
               color: 'rgba(255, 255, 255, 0.9)',
               mt: 1,
+              fontSize: { xs: '0.75rem', sm: '0.875rem' },
             }}
           >
             {description}

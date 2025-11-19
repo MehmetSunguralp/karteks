@@ -34,14 +34,15 @@ export const ProductGrid = () => {
   ];
 
   return (
-    <Box sx={{ pt: 8, pb: 0 }}>
+    <Box sx={{ pt: { xs: 4, sm: 6, md: 8 }, pb: 0 }}>
       <Container>
         <Typography
           variant='h2'
           sx={{
             textAlign: 'center',
-            mb: 2,
+            mb: { xs: 1, md: 2 },
             fontWeight: 700,
+            fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' },
           }}
         >
           Ürün Yelpazemiz
@@ -50,8 +51,10 @@ export const ProductGrid = () => {
           variant='h6'
           sx={{
             textAlign: 'center',
-            mb: 6,
+            mb: { xs: 4, md: 6 },
             color: 'text.secondary',
+            fontSize: { xs: '0.875rem', sm: '1rem', md: '1.25rem' },
+            px: { xs: 2, sm: 0 },
           }}
         >
           Kapsamlı profesyonel iş kıyafeti koleksiyonumuzu keşfedin
@@ -60,7 +63,7 @@ export const ProductGrid = () => {
           sx={{
             display: 'flex',
             flexWrap: 'wrap',
-            gap: 4,
+            gap: { xs: 2, sm: 3, md: 4 },
             justifyContent: 'center',
           }}
         >
@@ -75,17 +78,17 @@ export const ProductGrid = () => {
             />
           ))}
         </Box>
-        <Box sx={{ textAlign: 'center', mt: 6 }}>
+        <Box sx={{ textAlign: 'center', mt: { xs: 4, md: 6 } }}>
           <Button
             variant='contained'
             color='primary'
-            size='large'
+            size='medium'
             component={Link}
             href='/catalog'
             sx={{
-              px: 4,
-              py: 1.5,
-              fontSize: '1rem',
+              px: { xs: 3, sm: 4 },
+              py: { xs: 1, sm: 1.5 },
+              fontSize: { xs: '0.875rem', sm: '1rem' },
               fontWeight: 600,
               color: 'white',
             }}
