@@ -1,0 +1,53 @@
+.sectors-section {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.sectors-section .section-title {
+  color: var(--primary-color);
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.sector-card {
+  background-color: rgba(249, 246, 239, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid rgba(230, 183, 95, 0.3);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.sector-card:hover {
+  background-color: rgba(230, 183, 95, 0.2);
+  border-color: var(--accent-color);
+}
+
+.sector-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.sector-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sectors-grid {
+    grid-template-columns: 1fr;
+  }
+}
