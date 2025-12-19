@@ -1,387 +1,441 @@
-// Normalize products to always have images array
-const normalizeProduct = (product) => {
-  if (Array.isArray(product.image)) {
-    return { ...product, images: product.image };
-  }
-  return { ...product, images: [product.image] };
-};
+// TÜM ÜRÜNLER – cPanel klasör yapısına göre otomatik gruplanmış
+const BASE_IMAGE_URL = "https://dmstekstil.com/assets/images";
 
-const rawProducts = [
+export const products = [
+  // ================= AŞÇI GRUBU =================
   {
-    "id": 1,
-    "name": "İş Önlüğü",
-    "image": "https://i.hizliresim.com/3vuuoct.jpeg",
-    "category": ["önlük"],
-    "description": "Gün boyu kullanım için tasarlanmış, rahat ve dayanıklı iş önlüğü modeli. Hafif yapısı sayesinde hareket özgürlüğü sunar ve profesyonel kullanım için idealdir.",
-    "shortDescription": "Rahat ve dayanıklı iş önlüğü modeli."
-  },
-  {
-    "id": 2,
-    "name": "İş Önlüğü 2",
-    "image": "https://i.hizliresim.com/3u9lsgx.jpeg",
-    "category": ["önlük"],
-    "description": "Uzun süreli çalışmalarda konfor sağlayan, pratik ve dayanıklı iş önlüğü. Çeşitli sektörlerde güvenle kullanılabilecek ergonomik bir tasarıma sahiptir.",
-    "shortDescription": "Konforlu ve dayanıklı iş önlüğü."
-  },
-  {
-    "id": 3,
-    "name": "İş Önlüğü 3",
-    "image": "https://i.hizliresim.com/mqfsani.jpeg",
-    "category": ["önlük"],
-    "description": "Üst ve alt parçadan oluşan iş önlüğü takımı, rahat hareket imkanı sunan tasarımı ve dayanıklılığıyla yoğun iş temposuna uyum sağlar.",
-    "shortDescription": "Rahat ve dayanıklı iş önlüğü takımı."
-  },
-  {
-    "id": 4,
-    "name": "İş Önlüğü Takımı",
-    "image": "https://i.hizliresim.com/kk7viid.jpeg",
-    "category": ["önlük"],
-    "description": "Profesyonel kullanım için tasarlanmış iş önlüğü takımı, fonksiyonel yapısı ve dayanıklı tasarımıyla iş süreçlerinde maksimum konfor sunar.",
-    "shortDescription": "Dayanıklı ve fonksiyonel iş önlüğü takımı."
-  },
-  {
-    "id": 5,
-    "name": "Aşçı Önlüğü",
-    "image": "https://i.hizliresim.com/l6nam4p.jpeg",
-    "category": ["önlük"],
-    "description": "Mutfak ortamları için tasarlanmış, rahat ve dayanıklı aşçı önlüğü modeli. Hareket özgürlüğü sağlayan kesimiyle pratik kullanım sunar.",
-    "shortDescription": "Rahat ve dayanıklı aşçı önlüğü."
-  },
-  {
-    "id": 6,
-    "name": "Aşçı Önlüğü Takımı",
-    "image": "https://i.hizliresim.com/no7h4wh.jpeg",
-    "category": ["önlük"],
-    "description": "Profesyonel mutfaklarda kullanım için geliştirilmiş aşçı önlüğü takımı. Ergonomik yapısı ve yüksek dayanıklılığıyla rahat bir çalışma deneyimi sunar.",
-    "shortDescription": "Dayanıklı ve ergonomik aşçı önlüğü takımı."
-  },
-  {
-    "id": 7,
-    "name": "Sağlık Personeli Önlüğü",
-    "image": "https://i.hizliresim.com/qqczea3.jpeg",
-    "category": ["önlük"],
-    "description": "Yoğun çalışma temposuna uygun, hafif ve dayanıklı sağlık personeli önlüğü. Gün boyu konfor sağlayan sade ve işlevsel bir tasarıma sahiptir.",
-    "shortDescription": "Rahat ve dayanıklı sağlık personeli önlüğü."
-  },
-  {
-    "id": 8,
-    "name": "Softshell İş Yeleği Üç Cepli",
-    "image": "https://i.hizliresim.com/g1fiexz.jpeg",
-    "category": ["yelek", "softshell"],
-    "description": "Zorlu iş koşullarında maksimum konfor sunmak için tasarlanan softshell siyah iş ceketi, esnek yapısı sayesinde gün boyu rahat hareket imkânı sağlar. Dayanıklı yüzeyi ile hem saha hem fabrika ortamlarında güvenilir koruma sunar.",
-    "shortDescription": "Dayanıklı ve konforlu softshell iş ceketi."
-  },
-  {
-    "id": 9,
-    "name": "Softshell Fermuarlı İş Yeleği İki Cepli",
-    "image": "https://i.hizliresim.com/9dby0fw.jpeg",
-    "category": ["yelek", "softshell"],
-    "description": "Hafif yapısı ve ergonomik kesimiyle uzun süreli kullanımda konfor sağlayan haki softshell çalışma ceketi, rüzgar tutmayan yapısı ile dış mekân çalışmalarında ideal bir performans sunar.",
-    "shortDescription": "Ergonomik ve hafif softshell çalışma ceketi."
-  },
-  {
-    "id": 10,
-    "name": "Softshell Fermuarlı İş Yeleği Üç Cepli",
-    "image": "https://i.hizliresim.com/ouleqbb.jpeg",
-    "category": ["yelek", "softshell"],
-    "description": "Dikkat çekici rengi ve fonksiyonel tasarımıyla öne çıkan kırmızı softshell ceket, hafif dokusu ve esnek yapısıyla aktif çalışma alanlarında yüksek konfor sunar.",
-    "shortDescription": "Hafif ve ergonomik kırmızı softshell ceket."
-  },
-  {
-    "id": 11,
-    "name": "Reflektörlü İş Yeleği",
-    "image": "https://i.hizliresim.com/5smk7uv.jpeg",
-    "category": ["yelek"],
-    "description": "Geniş reflektör bantlarıyla görünürlüğü artıran siyah iş güvenliği ceketi, dayanıklı dokusu sayesinde yoğun iş temposuna uyum sağlar. İç ve dış mekânlarda güvenilir bir kullanım sunar.",
-    "shortDescription": "Yüksek görünürlüklü güvenlik ceketi."
-  },
-  {
-    "id": 12,
-    "name": "Reflektörlü İkaz Yeleği",
-    "image": "https://i.hizliresim.com/tirx0ff.jpeg",
-    "category": ["yelek"],
-    "description": "Turuncu tasarımı ve güçlü reflektör bantlarıyla maksimum görünürlük sağlayan bu güvenlik ceketi, hafif yapısı ile uzun süreli kullanımlarda bile rahatlık sunar.",
-    "shortDescription": "Rahat ve yüksek görünürlüklü güvenlik ceketi."
-  },
-  {
-    "id": 13,
-    "name": "Reflektörlü İkaz Yeleği",
-    "image": "https://i.hizliresim.com/e8bsn3o.jpeg",
-    "category": ["yelek"],
-    "description": "Turuncu tasarımı ve güçlü reflektör bantlarıyla maksimum görünürlük sağlayan bu güvenlik ceketi, hafif yapısı ile uzun süreli kullanımlarda bile rahatlık sunar.",
-    "shortDescription": "Rahat ve yüksek görünürlüklü güvenlik ceketi."
-  },
-  {
-    "id": 14,
-    "name": "Softshell İş Ceketi",
-    "image": "https://i.hizliresim.com/4dyxdmi.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Zorlu çalışma koşullarında dayanıklılık sunmak için tasarlanan siyah softshell iş ceketi, rüzgâr geçirmeyen yapısı ve esnek kumaşıyla gün boyu konfor sağlar. Kapüşonlu tasarımı sayesinde dış mekân kullanımlarında ekstra koruma sunar.",
-    "shortDescription": "Dayanıklı ve konforlu siyah softshell iş ceketi."
-  },
-  {
-    "id": 15,
-    "name": "Softshell Üç Cepli İş Ceketi",
-    "image": "https://i.hizliresim.com/5kj1vs2.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Minimal ve profesyonel bir görünüme sahip bu siyah softshell çalışma ceketi, hafif yapısı ve ergonomik kesimiyle gün boyu rahat hareket imkânı sunar. Hem iç hem dış mekânlarda güvenilir performans sağlar.",
-    "shortDescription": "Hafif ve ergonomik siyah softshell çalışma ceketi."
-  },
-  {
-    "id": 16,
-    "name": "Softshell İki Cepli İş Ceketi",
-    "image": "https://i.hizliresim.com/t85f0ch.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Gri tonlarla modern bir görünüm sunan bu softshell iş ceketi, rüzgâr geçirmeyen yapısı ve esnek kumaşıyla uzun süreli çalışmalarda yüksek konfor sağlar. Kapüşonlu yapısı dış mekân kullanımına uygun hale getirir.",
-    "shortDescription": "Rahat ve dayanıklı gri softshell iş ceketi."
-  },
-  {
-    "id": 17,
-    "name": "Softshell İş Ceketi",
-    "image": "https://i.hizliresim.com/5ze7413.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Canlı kırmızı rengiyle dikkat çeken bu softshell iş ceketi, hafif kumaşı ve nefes alabilen yapısıyla aktif çalışma ortamlarında üstün konfor sunar. Gün boyu hareket özgürlüğünü destekleyen ergonomik bir kesime sahiptir.",
-    "shortDescription": "Hafif ve konforlu kırmızı softshell iş ceketi."
-  },
-  {
-    "id": 18,
-    "name": "Softshell Çift Renk İş Ceketi",
-    "image": "https://i.hizliresim.com/7ooaw9l.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Reflektif detayları ve sade tasarımıyla öne çıkan siyah softshell iş ceketi, dayanıklı yapısıyla yoğun iş temposunda konfor sağlar. Hafif dokusu ve modern görünümü profesyonel kullanım için idealdir.",
-    "shortDescription": "Dayanıklı ve modern siyah softshell iş ceketi."
-  },
-  {
-    "id": 19,
-    "name": "Softshell Çift Renk İş Ceketi",
-    "image": "https://i.hizliresim.com/cptgr8s.jpeg",
-    "category": ["ceket", "softshell"],
-    "description": "Kırmızı-siyah çift renk tasarımıyla dinamik bir görünüm sunan softshell iş ceketi, dış etkenlere karşı dayanıklı yapısıyla profesyonel sahalarda güvenilir kullanım sağlar. Esnek kumaşı sayesinde uzun süreli çalışmalarda konfor sunar.",
-    "shortDescription": "Dayanıklı ve modern çift renk softshell iş ceketi."
-  },
-  {
-    "id": 20,
-    "name": "Reflektörlü İş Pantolonu",
-    "image": "https://i.hizliresim.com/sx5k89h.jpeg",
-    "category": ["pantolon"],
-    "description": "Gün boyu kullanım için tasarlanan lacivert reflektörlü iş pantolonu, dayanıklı yapısı ve rahat kesimiyle profesyonel çalışma alanlarında konfor sağlar. Yanal cep detayları işlevsel kullanım sunarken reflektör şeritleri görünürlüğü artırır.",
-    "shortDescription": "Rahat ve dayanıklı reflektörlü iş pantolonu."
-  },
-  {
-    "id": 21,
-    "name": "Reflektörlü Kot İş Pantolonu",
-    "image": "https://i.hizliresim.com/l2wcx98.jpeg",
-    "category": ["pantolon"],
-    "description": "Yan cep detaylarıyla pratik kullanım sunan lacivert reflektörlü iş pantolonu, esnek yapısı sayesinde yoğun çalışma temposunda rahat hareket imkanı sağlar. Reflektör bantlar farklı ışık koşullarında görünürlüğü artırır.",
-    "shortDescription": "Fonksiyonel ve yüksek görünürlüklü iş pantolonu."
-  },
-  {
-    "id": 22,
-    "name": "Çok Cepli İş Pantolonu",
-    "image": "https://i.hizliresim.com/apppkqi.jpeg",
-    "category": ["pantolon"],
-    "description": "Çok cepli yapısıyla öne çıkan gri iş pantolonu, hafif ve esnek tasarımıyla gün boyu konfor sunar. Arka ve yan cepleri işlevselliği artırırken sade görünümü profesyonel kullanım sağlar.",
-    "shortDescription": "Konforlu ve çok cepli gri iş pantolonu."
-  },
-  {
-    "id": 23,
-    "name": "Kargo Detaylı İş Pantolonu",
-    "image": "https://i.hizliresim.com/6g5vnvz.jpeg",
-    "category": ["pantolon"],
-    "description": "Kargo cepleriyle geniş kullanım alanı sunan gri iş pantolonu, dayanıklı dokusu ve rahat kesimiyle uzun süreli çalışmalarda konfor sağlar. Modern görünümü sayesinde birçok iş koluna uygundur.",
-    "shortDescription": "Dayanıklı ve fonksiyonel gri iş pantolonu."
-  },
-  {
-    "id": 25,
-    "name": "İş Pantolonu",
-    "image": "https://i.hizliresim.com/63vwadf.jpeg",
-    "category": ["pantolon"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
-  },
-  {
-    "id": 26,
-    "name": "Baret",
-    "image": ["https://r.resimlink.com/guDf1H.png",
-      "https://r.resimlink.com/5fv81NJxiWs.png",
-      "https://r.resimlink.com/C1kf2uM.png"
+    id: 1,
+    name: "Düz Önlük",
+    category: ["önlük", "aşçı grubu"],
+    images: [
+      `${BASE_IMAGE_URL}/asci_grubu/duz_onluk.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/duz_onluk2.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/duz_onluk3.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/duz_onluk4.webp`
     ],
-    "category": ["baret"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Sade ve dayanıklı düz iş önlüğü.",
+    description: "Düz iş önlüğü; mutfak, üretim ve servis alanlarında uzun süreli kullanım için tasarlanmış, hafif ve dayanıklı bir modeldir."
   },
   {
-    "id": 27,
-    "name": "Bisiklet Yaka Sweatshirt",
-    "image": [
-      "https://r.resimlink.com/tR402HGAs.png",
-      "https://r.resimlink.com/cb7mP.png",
-      "https://r.resimlink.com/BAwMFZ5.png",
-      "https://r.resimlink.com/qA4rUY6.png",
-      "https://r.resimlink.com/0Xo2MejFO8rn.png",
-      "https://r.resimlink.com/uE8P_lgtH.png",
-      "https://r.resimlink.com/AY3oZaz.png",
-      "https://r.resimlink.com/bGEsvU.png",
+    id: 2,
+    name: "Erkek Aşçı Önlüğü",
+    category: ["önlük", "aşçı grubu"],
+    images: [
+      `${BASE_IMAGE_URL}/asci_grubu/erkek_asci_onluk.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/erkek_asci_onluk2.webp`
     ],
-    "category": ["sweatshirt"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Profesyonel erkek aşçı önlüğü.",
+    description: "Erkek aşçı önlüğü, profesyonel mutfaklarda rahat hareket imkânı sunan ergonomik kesimi ve dayanıklı kumaşıyla öne çıkar."
   },
   {
-    "id": 28,
-    "name": "İkaz Yeleği",
-    "image": [
-      "https://r.resimlink.com/k6fiTX.png",
-      "https://r.resimlink.com/ofX8DaS3Ow.png",
-      "https://r.resimlink.com/xBqW_jT4A1.png",
+    id: 3,
+    name: "Kadın Aşçı Önlüğü",
+    category: ["önlük", "aşçı grubu"],
+    images: [
+      `${BASE_IMAGE_URL}/asci_grubu/kadin_asci_onluk.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/kadin_asci_onluk2.webp`
     ],
-    "category": ["ikaz yelekleri"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Kadınlara özel kesim aşçı önlüğü.",
+    description: "Kadın aşçı önlüğü, vücut ergonomisine uygun kesimi ve dayanıklı yapısıyla yoğun mutfak temposuna uyum sağlar."
   },
   {
-    "id": 29,
-    "name": "İkaz Yeleği",
-    "image": [
-      "https://r.resimlink.com/2SLVe.png",
-      "https://r.resimlink.com/sU6teM.png",
-      "https://r.resimlink.com/krCjdz.png",
+    id: 4,
+    name: "Aşçı Önlüğü Takımı",
+    category: ["önlük", "aşçı grubu"],
+    images: [
+      `${BASE_IMAGE_URL}/asci_grubu/onluk_takimi.webp`,
+      `${BASE_IMAGE_URL}/asci_grubu/onluk_takimi2.webp`
     ],
-    "category": ["ikaz yelekleri"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Üst–alt aşçı önlüğü takımı.",
+    description: "Aşçı önlüğü takımı, profesyonel mutfak kullanımı için tasarlanmış olup takım halinde pratik ve şık bir çözüm sunar."
+  },
+
+  // ================= BARET / BERE =================
+  {
+    id: 5,
+    name: "Baret",
+    category: ["baret", "iş güvenliği"],
+    images: [
+      `${BASE_IMAGE_URL}/baret/baret.webp`,
+      `${BASE_IMAGE_URL}/baret/baret2.webp`,
+      `${BASE_IMAGE_URL}/baret/baret3.webp`
+    ],
+    shortDescription: "İş güvenliği için koruyucu baret.",
+    description: "Baret, şantiye ve endüstriyel alanlarda baş koruması sağlamak üzere üretilmiş, darbelere dayanıklı bir iş güvenliği ekipmanıdır."
   },
   {
-    "id": 30,
-    "name": "Polo Yaka T-Shirt",
-    "image": [
-      "https://r.resimlink.com/nEFSqI0U8Oe.png",
-      "https://r.resimlink.com/3KXJsu.png",
-      "https://r.resimlink.com/i5CORdm.png",
-      "https://r.resimlink.com/1SVweXv.png",
-      "https://r.resimlink.com/tick0m.png",
-      "https://r.resimlink.com/zfUCGVu9-rq.png",
+    id: 6,
+    name: "Bere",
+    category: ["bere"],
+    images: [
+      `${BASE_IMAGE_URL}/bere/bere.webp`,
+      `${BASE_IMAGE_URL}/bere/bere2.webp`,
+      `${BASE_IMAGE_URL}/bere/bere3.webp`
     ],
-    "category": ["t-shirt"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Soğuk hava koşulları için bere.",
+    description: "İş beresi, soğuk havalarda başı sıcak tutmak için tasarlanmış, hafif ve konforlu bir üründür."
+  },
+
+  // ================= BİSİKLET YAKA =================
+  {
+    id: 7,
+    name: "Bisiklet Yaka Sweatshirt",
+    category: ["sweatshirt"],
+    images: [
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek2.png.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek3.png.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek3.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek4.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_erkek5.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_kadin.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/sweatshirt_kadin2.webp`
+    ],
+    shortDescription: "Rahat kesim bisiklet yaka sweatshirt.",
+    description: "Bisiklet yaka sweatshirt; iş ve günlük kullanım için uygun, dayanıklı kumaşı ve rahat kesimiyle öne çıkan bir modeldir."
   },
   {
-    "id": 31,
-    "name": "Kollu Önlük Takımı",
-    "image": [
-      "https://r.resimlink.com/T8Kq6JP1egSi.png",
-      "https://r.resimlink.com/tS78Oo9c24.png",
+    id: 8,
+    name: "Bisiklet Yaka T-Shirt",
+    category: ["t-shirt"],
+    images: [
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt2.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt3.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt4.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt5.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt6.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt7.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt8.webp`,
+      `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/bisiklet_yaka_tshirt9.webp`
     ],
-    "category": ["aşçı grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Günlük kullanıma uygun bisiklet yaka tişört.",
+    description: "Bisiklet yaka tişört; nefes alabilen kumaşı ve rahat kalıbıyla sıcak havalarda ideal bir kullanım sunar."
+  },
+
+  // ================= POLO YAKA =================
+  {
+    id: 9,
+    name: "Polo Yaka Sweatshirt",
+    category: ["sweatshirt"],
+    images: [
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt2.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt3.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt4.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt5.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt6.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/erkek_polo_yaka_sweatshirt7.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/kadin_polo_yaka_sweatshirt.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/kadin_polo_yaka_sweatshirt2.webp`
+    ],
+    shortDescription: "Polo yaka sweatshirt modeli.",
+    description: "Polo yaka sweatshirt; klasik görünümü ve rahat yapısıyla hem iş hem günlük kullanım için uygundur."
   },
   {
-    "id": 32,
-    "name": "Önlük",
-    "image": [
-      "https://r.resimlink.com/UqQZfrn.png",
-      "https://r.resimlink.com/GnLQBa9mvEhC.png",
-      "https://r.resimlink.com/h4vemps0A83.png",
-      "https://r.resimlink.com/GyeTC.png",
+    id: 10,
+    name: "Polo Yaka T-Shirt",
+    category: ["t-shirt"],
+    images: [
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt_erkek5.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt_erkek.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt_erkek2.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt_erkek3.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt_erkek4.webp`,
+      `${BASE_IMAGE_URL}/polo_yaka_tshirt/polo_yaka_tshirt.webp`
     ],
-    "category": ["aşçı grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Klasik polo yaka tişört.",
+    description: "Polo yaka tişört, kurumsal ve günlük kullanım için uygun, şık ve dayanıklı bir modeldir."
+  },
+  // =================YELEK / İKAZ =================
+  {
+    id: 11,
+    name: "İş Yeleği",
+    category: ["yelek"],
+    images: [
+      `${BASE_IMAGE_URL}/yelek/yelek.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek2.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek3.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek4.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek5.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek6.webp`,
+      `${BASE_IMAGE_URL}/yelek/yelek7.webp`
+    ],
+    shortDescription: "Çok cepli iş yeleği.",
+    description: "İş yeleği; saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür."
   },
   {
-    "id": 33,
-    "name": "Erkek Aşçı Önlüğü",
-    "image": [
-      "https://r.resimlink.com/basTM.png",
-      "https://r.resimlink.com/UtR-Xev_.png"
+    id: 12,
+    name: "İkaz Yeleği",
+    category: ["ikaz yelekleri"],
+    images: [
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi.webp`,
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi2.webp`,
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi3.webp`
     ],
-    "category": ["aşçı grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Reflektörlü ikaz yeleği.",
+    description: "İkaz yeleği, yüksek görünürlük sağlayan reflektör bantlarıyla iş güvenliği için tasarlanmıştır."
   },
   {
-    "id": 34,
-    "name": "Kadın Aşçı Önlüğü",
-    "image": [
-      "https://r.resimlink.com/96Aj_Lk.png",
-      "https://r.resimlink.com/e1mF_P.png"
+    id: 13,
+    name: "Çift Şerit İkaz Yeleği",
+    category: ["ikaz yelekleri"],
+    images: [
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi_cift_serit.webp`,
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi_cift_serit2.webp`,
+      `${BASE_IMAGE_URL}/ikaz_yelekleri/ikaz_yelegi_cift_serit3.webp`
     ],
-    "category": ["aşçı grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "Çift reflektör şeritli ikaz yeleği.",
+    description: "Çift şeritli ikaz yeleği, artırılmış görünürlük sağlayarak özellikle gece çalışmalarında güvenlik sunar."
+  },
+  //---------------
+  {
+    id: 14,
+    name: "Kadın Personel Önlüğü",
+    category: ["önlük"],
+    images: [
+      `${BASE_IMAGE_URL}/onluk/kadin_personel_onluk.webp`,
+	  `${BASE_IMAGE_URL}/onluk/kadin_personel_onluk2.webp`,
+	  `${BASE_IMAGE_URL}/onluk/kadin_personel_onluk3.webp`,
+	  `${BASE_IMAGE_URL}/onluk/kadin_personel_onluk4.webp`,
+	  `${BASE_IMAGE_URL}/onluk/kadin_personel_onluk5.webp`,
+    ],
+    shortDescription: "Genel kullanım kadın önlüğü.",
+    description: "Aşçı önlüğü takımı, profesyonel mutfak kullanımı için tasarlanmış olup takım halinde pratik ve şık bir çözüm sunar."
   },
   {
-    "id": 35,
-    "name": "Bere",
-    "image": [
-      "https://r.resimlink.com/MpJgdtzh.png",
-      "https://r.resimlink.com/qKIM2srmzfg.png",
-      "https://r.resimlink.com/qRuZH.png"
+    id: 15,
+    name: "Sağlıkçı Önlüğü",
+    category: ["sağlıkçı", "önlük"],
+    images: [
+      `${BASE_IMAGE_URL}/saglikci/saglikci.webp`,
+	  `${BASE_IMAGE_URL}/saglikci/saglikci2.webp`,
+	  `${BASE_IMAGE_URL}/saglikci/saglikci3.webp`,
+	  `${BASE_IMAGE_URL}/saglikci/saglikci4.webp`,
+	  `${BASE_IMAGE_URL}/saglikci/saglikci5.webp`,
     ],
-    "category": ["bere"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "",
+    description: ""
   },
   {
-    "id": 36,
-    "name": "Güvenlik Montu",
-    "image": [
-      "https://r.resimlink.com/zRnJ1My.png",
+    id: 16,
+    name: "Güvenlik Montu",
+    category: ["güvenlik"],
+    images: [
+      `${BASE_IMAGE_URL}/guvenlik/mont.webp`
     ],
-    "category": ["güvenlik grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "",
+    description: ""
   },
   {
-    "id": 37,
-    "name": "Güvenlik Pantolonu",
-    "image": [
-      "https://r.resimlink.com/eI5aMHgv.png",
+    id: 17,
+    name: "Güvenlik Pantolonu",
+    category: ["güvenlik"],
+    images: [
+	  `${BASE_IMAGE_URL}/guvenlik/pantolon_on.webp`,
+	  `${BASE_IMAGE_URL}/guvenlik/pantolon_arka.webp`
     ],
-    "category": ["güvenlik grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "",
+    description: ""
   },
   {
-    "id": 38,
-    "name": "Güvenlik Pantolonu",
-    "image": [
-      "https://r.resimlink.com/eI5aMHgv.png",
+    id: 18,
+    name: "Polar Hırka Çift Renk",
+    category: ["polar"],
+    images: [
+	  `${BASE_IMAGE_URL}/polar/hırka_cift_renk2.webp`,
+	  `${BASE_IMAGE_URL}/polar/hırka_cift_renk.webp`,
+	  `${BASE_IMAGE_URL}/polar/hırka_cift_renk3.webp`,
+	  `${BASE_IMAGE_URL}/polar/hırka_cift_renk4.webp`,
     ],
-    "category": ["güvenlik grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "",
+    description: ""
   },
   {
-    "id": 39,
-    "name": "Hemşire Önlüğü",
-    "image": [
-      "https://r.resimlink.com/uCJ72PgsQVb9.png",
-      "https://r.resimlink.com/GQAMyoXx2p4.png",
-      "https://r.resimlink.com/mCIKM.png",
-      "https://r.resimlink.com/ovyprPF5iZ.png",
-      "https://r.resimlink.com/o6lxs4I-.png",
+    id: 19,
+    name: "Polar Hırka Tek Cep",
+    category: ["polar"],
+    images: [
+	  `${BASE_IMAGE_URL}/polar/hirka_tek_cep.webp`,
+	  `${BASE_IMAGE_URL}/polar/hirka_tek_cep2.webp`,
     ],
-    "category": ["sağlık personeli grubu"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
+    shortDescription: "",
+    description: ""
   },
   {
-    "id": 40,
-    "name": "Kadın Personel Önlüğü",
-    "image": [
-      "https://r.resimlink.com/N-wtuK8S.png",
-      "https://r.resimlink.com/W-PE0K3zV9B.png",
-      "https://r.resimlink.com/2hxfCgz.png",
-      "https://r.resimlink.com/afK6R.png",
-      "https://r.resimlink.com/mhCNcyIDT19.png",
+    id: 20,
+    name: "Polar Hırka Cepsiz",
+    category: ["polar"],
+    images: [
+	  `${BASE_IMAGE_URL}/polar/hirka_cepsiz.webp`,
+	  `${BASE_IMAGE_URL}/polar/hirka_cepsiz2.webp`,
+	  `${BASE_IMAGE_URL}/polar/hırka_cift_renk4.webp`,
     ],
-    "category": ["önlük"],
-    "description": "Lacivert reflektör bantlı iş pantolonu, esnek yapısı ve dayanıklı dokusuyla farklı çalışma ortamlarında güvenilir bir kullanım sunar. Rahat kalıbı sayesinde gün boyu hareket özgürlüğü sağlar.",
-    "shortDescription": "Konforlu ve dayanıklı reflektör bantlı iş pantolonu."
-  }
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 21,
+    name: "Polar Hırka Cepsiz",
+    category: ["polar"],
+    images: [
+	  `${BASE_IMAGE_URL}/polar/hirka_iki_cep.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 22,
+    name: "Pantolon Reflektörlü",
+    category: ["pantolon"],
+    images: [
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_reflektor2.webp`,
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_reflektor3.webp`,
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_reflektor.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 23,
+    name: "Pantolon Şeritli",
+    category: ["pantolon"],
+    images: [
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_cift_serit.webp`,
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_kirmizi_serit.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 24,
+    name: "Erkek Tulum",
+    category: ["tulum"],
+    images: [
+	  `${BASE_IMAGE_URL}/tulum/erkek_tulum.webp`,
+	  `${BASE_IMAGE_URL}/tulum/erkek_tulum2.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 25,
+    name: "Erkek Tulum Renkli Yaka",
+    category: ["tulum"],
+    images: [
+	  `${BASE_IMAGE_URL}/tulum/erkek_tulum_renkli_yaka.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 26,
+    name: "İş Önlüğü Takımı",
+    category: ["önlük"],
+    images: [
+	  `${BASE_IMAGE_URL}/onluk/takim.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 26,
+    name: "Yelek Reflektörlü",
+    category: ["yelek"],
+    images: [
+	  `${BASE_IMAGE_URL}/yelek/yelek_reflektor.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 27,
+    name: "Softshell Yelek",
+    category: ["yelek", "softshell"],
+    images: [
+	  `${BASE_IMAGE_URL}/softshell/softshell_yelek.webp`,
+	  `${BASE_IMAGE_URL}/softshell/softshell_yelek.webp`,
+  	  `${BASE_IMAGE_URL}/softshell/softshell_yelek.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 28,
+    name: "Softshell Ceket",
+    category: ["ceket", "softshell"],
+    images: [
+	  `${BASE_IMAGE_URL}/softshell/softshell_ceket.webp`,
+	  `${BASE_IMAGE_URL}/softshell/softshell_ceket2.webp`,
+  	  `${BASE_IMAGE_URL}/softshell/softshell_ceket3.webp`,
+	  `${BASE_IMAGE_URL}/softshell/softshell_ceket4.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 29,
+    name: "Softshell Ceket Çift Renkli",
+    category: ["ceket", "softshell"],
+    images: [
+	  `${BASE_IMAGE_URL}/softshell/softshell_ceket_cift_renk.webp`,
+	  `${BASE_IMAGE_URL}/softshell/softshell_ceket_cift_renk2.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 30,
+    name: "Oxford Kaban",
+    category: ["mont"],
+    images: [
+	  `${BASE_IMAGE_URL}/mont/oxford_kaban.webp`,
+	  `${BASE_IMAGE_URL}/mont/oxford_kaban2.webp`,
+	  `${BASE_IMAGE_URL}/mont/oxford_kaban3.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 30,
+    name: "Bondi Mont",
+    category: ["mont"],
+    images: [
+	  `${BASE_IMAGE_URL}/mont/bondi_mont3.webp`,
+	  `${BASE_IMAGE_URL}/mont/bondi_mont.webp`,
+	  `${BASE_IMAGE_URL}/mont/bondi_mont2.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 30,
+    name: "Sitona Kaban",
+    category: ["mont"],
+    images: [
+	  `${BASE_IMAGE_URL}/mont/sitona_kaban.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 31,
+    name: "Kot Pantolon Reflektörlü",
+    category: ["pantolon"],
+    images: [
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_kot_reflektorlu.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
+  {
+    id: 32,
+    name: "Kargo Pantolon",
+    category: ["pantolon"],
+    images: [
+	  `${BASE_IMAGE_URL}/pantolon/pantolon_kargo.webp`,
+    ],
+    shortDescription: "",
+    description: ""
+  },
 ];
-
-export const products = rawProducts.map(normalizeProduct);
