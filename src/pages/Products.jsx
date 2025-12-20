@@ -66,7 +66,7 @@ const Products = () => {
 							className={`category-filter ${selectedCategory === category ? "active" : ""}`}
 							onClick={() => handleCategoryChange(category)}
 						>
-							{category === "all" ? "Tümü" : category.charAt(0).toUpperCase() + category.slice(1)}
+							{category === "all" ? "Tümü" : category.charAt(0).toLocaleUpperCase("tr-TR") + category.slice(1)}
 						</button>
 					))}
 				</motion.div>

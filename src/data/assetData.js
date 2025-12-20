@@ -2,19 +2,19 @@ export const heroImage = "https://www.cws.com/sites/default/files/2024-11/cws_wo
 
 export const categoryData = [
     {
-        name: "Mont",
-        image: "https://i.hizliresim.com/8lajrp2.png"
+        name: "Softshell Grupları",
+        image: "https://dmstekstil.com/assets/images/softshell/softshell_ceket_cift_renk.webp"
     },
     {
-        name: "Önlük",
-        image: "https://i.hizliresim.com/42bdlx7.png"
+        name: "Önlük Grupları",
+        image: "https://dmstekstil.com/assets/images/onluk/takim.webp"
     },
     {
-        name: "Pantolon",
-        image: "https://i.hizliresim.com/wsnh5pw.png"
+        name: "Mont/Kaban Grupları",
+        image: "https://dmstekstil.com/assets/images/mont/oxford_kaban.webp"
     },
     {
-        name: "Yelek",
-        image: "https://i.hizliresim.com/euagvtc.png"
+        name: "T-Shirt Grupları",
+        image: "https://dmstekstil.com/assets/images/polo_yaka_tshirt/polo_yaka_tshirt_erkek5.webp"
     },
 ]
