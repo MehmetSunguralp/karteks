@@ -38,7 +38,7 @@ const Footer = () => {
           </p>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           className='footer-section'
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,9 +55,9 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           className='footer-section'
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className='footer-section'
@@ -86,16 +86,16 @@ const Footer = () => {
           <h3 className='footer-title'>İletişim</h3>
           <div className='footer-contact'>
             <a href='emailto:pazarlama@dmstekstil.com'>Email: pazarlama@dmstekstil.com</a>
+            <p>Telefon: +90 543 920 69 30</p>
             <p>Telefon: +90 542 780 79 23</p>
-            <p>Adres: Yenişehir Mh. Abdullah Sabri Ülgen Cd. No: 2/7 Merkez/Karaman</p>
+            <p>Adres: Merkez/Karaman</p>
           </div>
         </motion.div>
       </div>
 
       <div className='footer-bottom'>
         <p>
-          &copy; {currentYear} DMS Tekstil bir KARTEKS İNŞAAT TEKSTİL SANAYİ TİCARET LİMİTED ŞİRKETİ
-          markasıdır.
+          &copy; {currentYear} Tüm hakları saklıdır.
         </p>
       </div>
     </footer>

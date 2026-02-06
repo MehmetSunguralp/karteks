@@ -3,18 +3,18 @@ export const heroImage = "https://www.cws.com/sites/default/files/2024-11/cws_wo
 export const categoryData = [
     {
         name: "Softshell Grupları",
-        image: "https://dmstekstil.com/assets/images/softshell/softshell_ceket_cift_renk.webp"
+        image: "https://dmstekstil.com/assets/images/anasayfa/softshell.webp"
     },
     {
         name: "Önlük Grupları",
-        image: "https://dmstekstil.com/assets/images/onluk/takim.webp"
+        image: "https://dmstekstil.com/assets/images/anasayfa/onluk.webp"
     },
     {
-        name: "Mont/Kaban Grupları",
-        image: "https://dmstekstil.com/assets/images/mont/oxford_kaban.webp"
+        name: "Polar Grupları",
+        image: "https://dmstekstil.com/assets/images/anasayfa/polar.webp"
     },
     {
-        name: "T-Shirt Grupları",
-        image: "https://dmstekstil.com/assets/images/polo_yaka_tshirt/polo_yaka_tshirt_erkek5.webp"
+        name: "Tulum Grupları",
+        image: "https://dmstekstil.com/assets/images/anasayfa/tulum.webp"
     },
 ]
