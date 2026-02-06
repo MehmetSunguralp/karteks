@@ -14,8 +14,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polar/DMS-PL-001-KR.webp`,
       `${BASE_IMAGE_URL}/polar/DMS-PL-001-SY.webp`
     ],
-    shortDescription: "Polar hırka, sıcak tutan polar kumaşı ve rahat kesimiyle soğuk havalarda ideal koruma sağlar.",
-    description: "Polar hırka, soğuk hava koşullarında sıcak tutan polar kumaş yapısıyla üretilmiştir. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
+    shortDescription: "Çift renkli polar hırka sıcak tutan kumaş yapısıyla soğuk havalarda koruma sağlar.",
+    description: "Polar hırka çift renk, modern çift renk tasarımı ve sıcak tutan polar kumaş yapısıyla soğuk hava koşullarında ideal koruma sunar. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur. Çift renk detayıyla hem iş hem günlük kullanım için şık bir seçenektir."
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polar/DMS-PL-002-LC2.webp`,
       `${BASE_IMAGE_URL}/polar/DMS-PL-002-TC.webp`
     ],
-    shortDescription: "Polar hırka, sıcak tutan polar kumaşı ve rahat kesimiyle soğuk havalarda ideal koruma sağlar.",
-    description: "Polar hırka, soğuk hava koşullarında sıcak tutan polar kumaş yapısıyla üretilmiştir. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
+    shortDescription: "Yarım fermuarlı polar hırka pratik kullanım ve sıcak tutan yapı sunar.",
+    description: "Polar hırka yarım fermuar, yarım fermuar detayıyla pratik kullanım imkanı sunan sıcak tutan polar kumaş yapısına sahiptir. Soğuk hava koşullarında ideal koruma sağlar. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur. Fermuar detayı sayesinde kolay giyilip çıkarılabilir."
   },
   {
     id: 3,
@@ -42,8 +42,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polar/DMS-PL-003-GR.webp`,
       `${BASE_IMAGE_URL}/polar/DMS-PL-003-LC.webp`
     ],
-    shortDescription: "Polar hırka, sıcak tutan polar kumaşı ve rahat kesimiyle soğuk havalarda ideal koruma sağlar.",
-    description: "Polar hırka, soğuk hava koşullarında sıcak tutan polar kumaş yapısıyla üretilmiştir. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
+    shortDescription: "Cepsiz polar hırka minimal tasarım ve sıcak tutan yapı sunar.",
+    description: "Polar hırka cepsiz, minimal tasarımı ve cepsiz yapısıyla hafif kullanım için ideal bir üründür. Sıcak tutan polar kumaş yapısıyla soğuk hava koşullarında koruma sağlar. Sade görünümü ve rahat kesimiyle hem iş hem günlük kullanım için uygundur. Dayanıklı malzemesiyle uzun ömürlü kullanım sunar."
   },
   {
     id: 4,
@@ -54,8 +54,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polar/DMS-PL-004-MV.webp`,
       `${BASE_IMAGE_URL}/polar/DMS-PL-004-YL.webp`
     ],
-    shortDescription: "Polar hırka, sıcak tutan polar kumaşı ve rahat kesimiyle soğuk havalarda ideal koruma sağlar.",
-    description: "Polar hırka, soğuk hava koşullarında sıcak tutan polar kumaş yapısıyla üretilmiştir. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
+    shortDescription: "Üç cepli polar hırka fonksiyonel cep detayları ve sıcak tutan yapı sunar.",
+    description: "Polar hırka üç cep, fonksiyonel üç cep detayı ve sıcak tutan polar kumaş yapısıyla pratik kullanım sunar. Soğuk hava koşullarında ideal koruma sağlar. Geniş cepleri sayesinde eşyalarınızı güvenle taşıyabilirsiniz. Rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
   },
   {
     id: 5,
@@ -69,8 +69,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polar/DMS-PL-005-LCK.webp`,
       `${BASE_IMAGE_URL}/polar/DMS-PL-005-SY.webp`,
     ],
-    shortDescription: "Polar hırka, sıcak tutan polar kumaşı ve rahat kesimiyle soğuk havalarda ideal koruma sağlar.",
-    description: "Polar hırka, soğuk hava koşullarında sıcak tutan polar kumaş yapısıyla üretilmiştir. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
+    shortDescription: "Çift renkli polar hırka modern tasarım ve sıcak tutan yapı sunar.",
+    description: "Polar hırka çift renk, modern çift renk tasarımı ve sıcak tutan polar kumaş yapısıyla soğuk hava koşullarında ideal koruma sunar. Hafif ve nefes alabilen özelliği, rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur. Çift renk detayıyla hem iş hem günlük kullanım için şık bir seçenektir."
   },
 
   // ================= MONT VE KABANLAR =================
@@ -84,8 +84,8 @@ export const products = [
       `${BASE_IMAGE_URL}/mont/DMS-MN-001-LC.webp`,
       `${BASE_IMAGE_URL}/mont/DMS-MN-001-TC.webp`
     ],
-    shortDescription: "İş montu, soğuk hava koşullarında koruma sağlayan dayanıklı ve fonksiyonel dış giyim ürünüdür.",
-    description: "İş montu, soğuk ve yağışlı hava koşullarında maksimum koruma sağlamak üzere tasarlanmıştır. Su geçirmez yapısı, dayanıklı kumaşı ve fonksiyonel cep detaylarıyla zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "Sitona mont dayanıklı kumaş ve soğuk hava koruması sunar.",
+    description: "Sitona mont, kaliteli sitona kumaşı ve şık tasarımıyla hem iş hem günlük kullanım için uygun bir modeldir. Soğuk ve yağışlı hava koşullarında maksimum koruma sağlar. Su geçirmez yapısı, dayanıklı kumaşı ve fonksiyonel cep detaylarıyla zorlu iş koşullarında güvenilir koruma sunar."
   },
   {
     id: 7,
@@ -100,8 +100,8 @@ export const products = [
       `${BASE_IMAGE_URL}/mont/DMS-MN-002-LCTC.webp`,
       `${BASE_IMAGE_URL}/mont/DMS-MN-002-TC.webp`
     ],
-    shortDescription: "İş montu, soğuk hava koşullarında koruma sağlayan dayanıklı ve fonksiyonel dış giyim ürünüdür.",
-    description: "İş montu, soğuk ve yağışlı hava koşullarında maksimum koruma sağlamak üzere tasarlanmıştır. Su geçirmez yapısı, dayanıklı kumaşı ve fonksiyonel cep detaylarıyla zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "Oxford kaban dayanıklı kumaş ve su geçirmez yapı sunar.",
+    description: "Oxford kaban, dayanıklı oxford kumaşı ve su geçirmez yapısıyla soğuk ve yağışlı havalarda koruma sağlayan bir modeldir. Fonksiyonel cep detayları ve ergonomik tasarımıyla zorlu iş koşullarında güvenilir koruma sunar. Hem iş hem günlük kullanım için uygundur."
   },
   {
     id: 8,
@@ -113,8 +113,8 @@ export const products = [
       `${BASE_IMAGE_URL}/mont/DMS-MN-003-MV.webp`,
       `${BASE_IMAGE_URL}/mont/DMS-MN-003-SR.webp`
     ],
-    shortDescription: "İş montu, soğuk hava koşullarında koruma sağlayan dayanıklı ve fonksiyonel dış giyim ürünüdür.",
-    description: "İş montu, soğuk ve yağışlı hava koşullarında maksimum koruma sağlamak üzere tasarlanmıştır. Su geçirmez yapısı, dayanıklı kumaşı ve fonksiyonel cep detaylarıyla zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "Rainbow ceket renkli tasarım ve soğuk hava koruması sunar.",
+    description: "Rainbow ceket, renkli tasarımı ve dayanıklı kumaş yapısıyla soğuk hava koşullarında koruma sağlar. Modern görünümü ve fonksiyonel yapısıyla dikkat çeken bir iş kıyafetidir. Rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
   },
 
   // ================= YELEKLER =================
@@ -132,8 +132,8 @@ export const products = [
       `${BASE_IMAGE_URL}/yelek/DMS-YL-001-SY.webp`,
       `${BASE_IMAGE_URL}/yelek/DMS-YL-001-TK.webp`
     ],
-    shortDescription: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür.",
-    description: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Şişme yelek çok cepli ve dayanıklı yapı sunar.",
+    description: "Şişme yelek, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Şişme özelliği sayesinde ek koruma sağlar. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 10,
@@ -143,8 +143,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek/DMS-YL-002-GR.webp`
     ],
-    shortDescription: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür.",
-    description: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Ripstop yelek çok cepli dayanıklı kumaş yapısı sunar.",
+    description: "Ripstop yelek çok cepli, dayanıklı ripstop kumaş yapısı ve çok sayıda cep detayıyla pratik kullanım sunar. Saha ve fabrika ortamlarında ideal bir seçenektir. Geniş cepleri sayesinde eşyalarınızı güvenle taşıyabilirsiniz. Ergonomik tasarımıyla uzun süreli kullanım için uygundur."
   },
   {
     id: 11,
@@ -154,8 +154,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek/DMS-YL-003-SY.webp`
     ],
-    shortDescription: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür.",
-    description: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Reflektörlü yelek görünürlük artıran bantlar sunar.",
+    description: "Yelek reflektörlü, görünürlüğü artıran reflektör bantlarıyla güvenlik sağlayan pratik bir iş kıyafetidir. Özellikle gece çalışmalarında ve düşük görünürlük koşullarında yüksek görünürlük sağlar. Dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 12,
@@ -165,8 +165,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek/DMS-YL-004-LC.webp`
     ],
-    shortDescription: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür.",
-    description: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Winto yelek dayanıklı kumaş ve pratik kullanım sunar.",
+    description: "Winto yelek, saha ve fabrika ortamlarında pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Özel kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. Geniş cepleri ve fonksiyonel detaylarıyla pratik bir çözümdür."
   },
   {
     id: 13,
@@ -177,8 +177,8 @@ export const products = [
       `${BASE_IMAGE_URL}/yelek/DMS-YL-005-GR.webp`,
       `${BASE_IMAGE_URL}/yelek/DMS-YL-005-LC.webp`
     ],
-    shortDescription: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım sunan, çok cepli ve dayanıklı bir üründür.",
-    description: "İş yeleği, saha ve fabrika ortamlarında pratik kullanım imkanı sunan çok fonksiyonlu bir iş kıyafetidir. Geniş cepleri, dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Kuma yelek dayanıklı kumaş ve pratik kullanım sunar.",
+    description: "Kuma yelek, saha ve fabrika ortamlarında pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Özel kuma yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. Geniş cepleri ve fonksiyonel detaylarıyla pratik bir çözümdür."
   },
 
   // ================= SOFTSHELL ÜRÜNLER =================
@@ -192,8 +192,8 @@ export const products = [
       `${BASE_IMAGE_URL}/softshell/DMS-SS-001-AT.webp`,
       `${BASE_IMAGE_URL}/softshell/DMS-SS-001-SY.webp`
     ],
-    shortDescription: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaşıyla dış mekan çalışmalarında ideal koruma sunar.",
-    description: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaş özelliğiyle dış mekan çalışmalarında maksimum konfor sağlar. Esnek yapısı ve dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "Çift renkli softshell ceket rüzgar geçirmeyen yapı sunar.",
+    description: "Softshell ceket çift renk, modern çift renk tasarımı ve fonksiyonel yapısıyla dikkat çeken bir iş kıyafetidir. Rüzgar geçirmeyen yapısı ve nefes alabilen kumaş özelliğiyle dış mekan çalışmalarında maksimum konfor sağlar. Esnek yapısı ve dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar."
   },
   {
     id: 15,
@@ -206,8 +206,8 @@ export const products = [
       `${BASE_IMAGE_URL}/softshell/DMS-SS-002-KZ.webp`,
       `${BASE_IMAGE_URL}/softshell/DMS-SS-002-SY.webp`
     ],
-    shortDescription: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaşıyla dış mekan çalışmalarında ideal koruma sunar.",
-    description: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaş özelliğiyle dış mekan çalışmalarında maksimum konfor sağlar. Esnek yapısı ve dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "İki cepli softshell ceket fonksiyonel cep detayları sunar.",
+    description: "Softshell ceket iki cep, fonksiyonel iki cep detayı ve rüzgar geçirmeyen yapısıyla dış mekan çalışmalarında ideal koruma sunar. Nefes alabilen kumaş özelliği ve esnek yapısıyla maksimum konfor sağlar. Dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar."
   },
   {
     id: 16,
@@ -219,8 +219,8 @@ export const products = [
       `${BASE_IMAGE_URL}/softshell/DMS-SS-003-KZ.webp`,
       `${BASE_IMAGE_URL}/softshell/DMS-SS-003-SY.webp`
     ],
-    shortDescription: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaşıyla dış mekan çalışmalarında ideal koruma sunar.",
-    description: "Softshell iş kıyafeti, rüzgar geçirmeyen yapısı ve nefes alabilen kumaş özelliğiyle dış mekan çalışmalarında maksimum konfor sağlar. Esnek yapısı ve dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar."
+    shortDescription: "Softshell yelek rüzgar geçirmeyen yapı ve nefes alabilen kumaş sunar.",
+    description: "Softshell yelek, rüzgar geçirmeyen yapısı ve nefes alabilen kumaşıyla dış mekan çalışmalarında ideal koruma sunar. Hafif yapısı ve esnek malzemesiyle maksimum konfor sağlar. Dayanıklı yapısıyla zorlu iş koşullarında güvenilir koruma sunar."
   },
 
   // ================= PANTOLONLAR =================
@@ -232,8 +232,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-001-KR.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Kargo pantolon çok cepli dayanıklı kumaş yapısı sunar.",
+    description: "Kargo pantolon, geniş cepleri ve dayanıklı yapısıyla pratik kullanım sunan, iş ve günlük kullanım için ideal bir modeldir. Çok sayıda cep detayı sayesinde eşyalarınızı güvenle taşıyabilirsiniz. Rahat kesimi ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 18,
@@ -244,8 +244,8 @@ export const products = [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-002-SY 2.webp`,
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-002-SY.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Şeritli pantolon görünürlük artıran şerit detayları sunar.",
+    description: "Pantolon şeritli, yan şerit detaylarıyla görünürlüğü artıran ve iş güvenliği sağlayan dayanıklı bir modeldir. Özellikle gece çalışmalarında güvenlik sağlar. Dayanıklı kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için idealdir."
   },
   {
     id: 19,
@@ -258,8 +258,8 @@ export const products = [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-003-KT.webp`,
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-003-SY.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Reflektörlü pantolon görünürlük artıran bantlar sunar.",
+    description: "Pantolon reflektörlü, görünürlüğü artıran reflektör bantlarıyla özellikle gece çalışmalarında güvenlik sağlar. Dayanıklı kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için idealdir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 20,
@@ -269,8 +269,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-004-FS.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Poliüretan pantolon reflektörlü yüksek görünürlük sunar.",
+    description: "Poliüretan pantolon reflektörlü, özel poliüretan kumaş yapısı ve reflektör bantlarıyla yüksek görünürlük sağlar. Özellikle gece çalışmalarında ve düşük görünürlük koşullarında güvenlik sağlar. Dayanıklı yapısı ve ergonomik kesimiyle uzun süreli kullanım için idealdir."
   },
   {
     id: 21,
@@ -280,8 +280,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-005-GR.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Pötikare pantolon desenli kumaş ve dayanıklı yapı sunar.",
+    description: "Pötikare pantolon, desenli kumaş yapısı ve dayanıklı malzemesiyle hem iş hem günlük kullanım için uygun bir modeldir. Rahat kesimi ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 22,
@@ -293,8 +293,8 @@ export const products = [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-006-GR.webp`,
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-006-LC.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Osaka pantolon dayanıklı kumaş ve rahat kesim sunar.",
+    description: "Osaka pantolon, dayanıklı kumaş yapısı ve rahat kesimiyle yoğun iş temposuna uyum sağlar. Ergonomik tasarımı ve geniş cepleriyle pratik kullanım sunar. Sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 23,
@@ -304,8 +304,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/pantolon/DMS-PN-007-SY.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Bağcıklı pantolon ayarlanabilir bel ve dayanıklı yapı sunar.",
+    description: "Bağcıklı pantolon, ayarlanabilir bel detayı ve dayanıklı kumaş yapısıyla pratik kullanım sunar. Rahat kesimi ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 24,
@@ -315,8 +315,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/pantolon/DMS-SS-004-SY.webp`
     ],
-    shortDescription: "İş pantolonu, dayanıklı kumaşı ve fonksiyonel yapısıyla yoğun iş temposuna uyum sağlar.",
-    description: "İş pantolonu, çalışma ortamlarında rahat hareket imkanı sunan ergonomik kesimi ve dayanıklı kumaş yapısıyla üretilmiştir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
+    shortDescription: "Softshell pantolon rüzgar geçirmeyen yapı sunar.",
+    description: "Softshell pantolon, rüzgar geçirmeyen yapısı ve nefes alabilen kumaş özelliğiyle dış mekan çalışmalarında ideal koruma sunar. Esnek yapısı ve dayanıklı malzemesiyle zorlu iş koşullarında güvenilir koruma sunar. Rahat kesimiyle uzun süreli kullanım için uygundur."
   },
 
   // ================= İKAZ YELEKLERİ =================
@@ -330,8 +330,8 @@ export const products = [
       `${BASE_IMAGE_URL}/ikaz_yelekleri/DMS-IY-001-FS.webp`,
       `${BASE_IMAGE_URL}/ikaz_yelekleri/DMS-IY-001-MV.webp`,
     ],
-    shortDescription: "İkaz yeleği, yüksek görünürlük sağlayan reflektör bantlarıyla iş güvenliği için tasarlanmıştır.",
-    description: "İkaz yeleği, özellikle gece çalışmalarında ve düşük görünürlük koşullarında yüksek görünürlük sağlamak üzere tasarlanmıştır. Reflektör bantları ve parlak renk seçenekleriyle güvenlik sağlar."
+    shortDescription: "Çok reflektörlü ikaz yeleği yüksek görünürlük sağlar.",
+    description: "İkaz yeleği çok reflektörlü, çok sayıda reflektör bant detayıyla özellikle gece çalışmalarında ve düşük görünürlük koşullarında yüksek görünürlük sağlar. Artırılmış reflektör detaylarıyla maksimum güvenlik sunar. Parlak renk seçenekleriyle iş güvenliği için ideal bir seçenektir."
   },
   {
     id: 26,
@@ -343,8 +343,8 @@ export const products = [
       `${BASE_IMAGE_URL}/ikaz_yelekleri/DMS-IY-002-KZ.webp`,
       `${BASE_IMAGE_URL}/ikaz_yelekleri/DMS-IY-002-TC.webp`
     ],
-    shortDescription: "İkaz yeleği, yüksek görünürlük sağlayan reflektör bantlarıyla iş güvenliği için tasarlanmıştır.",
-    description: "İkaz yeleği, özellikle gece çalışmalarında ve düşük görünürlük koşullarında yüksek görünürlük sağlamak üzere tasarlanmıştır. Reflektör bantları ve parlak renk seçenekleriyle güvenlik sağlar."
+    shortDescription: "İkaz yeleği reflektör bantlarıyla yüksek görünürlük sunar.",
+    description: "İkaz yeleği, yüksek görünürlük sağlayan reflektör bantlarıyla iş güvenliği için tasarlanmıştır. Özellikle gece çalışmalarında ve düşük görünürlük koşullarında yüksek görünürlük sağlar. Reflektör bantları ve parlak renk seçenekleriyle güvenlik sağlar."
   },
 
   // ================= SWEATSHIRT =================
@@ -363,8 +363,8 @@ export const products = [
       `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/DMS-BS-001-PB.webp`,
       `${BASE_IMAGE_URL}/bisiklet_yaka_sweatshirt/DMS-BS-001-SY.webp`,
     ],
-    shortDescription: "Bisiklet yaka sweatshirt, rahat kesimi ve dayanıklı kumaşıyla iş ve günlük kullanım için uygundur.",
-    description: "Bisiklet yaka sweatshirt, modern tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için ideal bir seçenektir. Nefes alabilen kumaş yapısı ve dayanıklı malzemesiyle uzun ömürlü kullanım sunar."
+    shortDescription: "Bisiklet yaka sweatshirt rahat kesim ve dayanıklı kumaş sunar.",
+    description: "Bisiklet yaka sweatshirt, modern tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için ideal bir seçenektir. Nefes alabilen kumaş yapısı ve dayanıklı malzemesiyle uzun ömürlü kullanım sunar. Rahat kesimi sayesinde uzun süreli kullanım için uygundur."
   },
   {
     id: 28,
@@ -382,8 +382,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/DMS-PS-001-SY.webp`,
       `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/DMS-PS-001-TC.webp`,
     ],
-    shortDescription: "Polo yaka sweatshirt, klasik görünümü ve rahat yapısıyla hem iş hem günlük kullanım için uygundur.",
-    description: "Polo yaka sweatshirt, klasik polo yaka tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için ideal bir seçenektir. Dayanıklı kumaş yapısı ve şık görünümüyle uzun ömürlü kullanım sunar."
+    shortDescription: "Polo yaka sweatshirt klasik görünüm ve rahat yapı sunar.",
+    description: "Polo yaka sweatshirt, klasik polo yaka tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için ideal bir seçenektir. Dayanıklı kumaş yapısı ve şık görünümüyle uzun ömürlü kullanım sunar. Kurumsal görünümü sayesinde profesyonel ortamlarda da kullanılabilir."
   },
   {
     id: 29,
@@ -395,8 +395,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/DMS-PS-002-FS.webp`,
       `${BASE_IMAGE_URL}/polo_yaka_sweatshirt/DMS-PS-002-TC.webp`
     ],
-    shortDescription: "Polo yaka sweatshirt, klasik görünümü ve rahat yapısıyla hem iş hem günlük kullanım için uygundur.",
-    description: "Polo yaka sweatshirt, klasik polo yaka tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için ideal bir seçenektir. Dayanıklı kumaş yapısı ve şık görünümüyle uzun ömürlü kullanım sunar."
+    shortDescription: "Reflektörlü sweatshirt görünürlük artıran bantlar sunar.",
+    description: "Sweatshirt reflektörlü, görünürlüğü artıran reflektör bantlarıyla özellikle gece çalışmalarında güvenlik sağlar. Klasik polo yaka tasarımı ve rahat kesimiyle hem iş hem günlük kullanım için uygundur. Dayanıklı kumaş yapısıyla uzun ömürlü kullanım sunar."
   },
   {
     id: 30,
@@ -407,8 +407,8 @@ export const products = [
       `${BASE_IMAGE_URL}/kapsonlu_sweatshirt/DMS-KS-001-FS.webp`,
       `${BASE_IMAGE_URL}/kapsonlu_sweatshirt/DMS-KS-001-LC.webp`
     ],
-    shortDescription: "Kapşonlu sweatshirt, kapşon detayı ve sıcak tutan yapısıyla soğuk havalarda ideal koruma sunar.",
-    description: "Kapşonlu sweatshirt, kapşon detayı ve sıcak tutan kumaş yapısıyla soğuk hava koşullarında kullanım için tasarlanmıştır. Rahat kesimi ve dayanıklı malzemesiyle uzun ömürlü kullanım sağlar."
+    shortDescription: "Kapüşonlu reflektörlü sweatshirt baş koruması ve görünürlük sunar.",
+    description: "Sweatshirt kapüşonlu ve reflektörlü, kapüşon detayı ve reflektör bantlarıyla hem baş koruması hem yüksek görünürlük sağlar. Sıcak tutan kumaş yapısıyla soğuk hava koşullarında ideal koruma sunar. Rahat kesimi ve dayanıklı malzemesiyle uzun ömürlü kullanım sağlar."
   },
   {
     id: 31,
@@ -418,8 +418,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/kapsonlu_sweatshirt/DMS-KS-002-TC.webp`
     ],
-    shortDescription: "Kapşonlu sweatshirt, kapşon detayı ve sıcak tutan yapısıyla soğuk havalarda ideal koruma sunar.",
-    description: "Kapşonlu sweatshirt, kapşon detayı ve sıcak tutan kumaş yapısıyla soğuk hava koşullarında kullanım için tasarlanmıştır. Rahat kesimi ve dayanıklı malzemesiyle uzun ömürlü kullanım sağlar."
+    shortDescription: "Yarım fermuarlı reflektörlü sweatshirt pratik kullanım sunar.",
+    description: "Sweatshirt yarım fermuar ve reflektörlü, yarım fermuar detayı ve reflektör bantlarıyla pratik kullanım ve yüksek görünürlük sağlar. Sıcak tutan kumaş yapısıyla soğuk hava koşullarında ideal koruma sunar. Fermuar detayı sayesinde kolay giyilip çıkarılabilir."
   },
 
   // ================= T-SHIRT =================
@@ -439,8 +439,8 @@ export const products = [
       `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/DMS-BT-001-SR.webp`,
       `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/DMS-BT-001-TC.webp`
     ],
-    shortDescription: "Bisiklet yaka tişört, nefes alabilen kumaşı ve rahat kalıbıyla sıcak havalarda ideal kullanım sunar.",
-    description: "Bisiklet yaka tişört, sıcak hava koşullarında rahatlık sağlayan nefes alabilen kumaş yapısına sahiptir. Ergonomik kesimi ve dayanıklı malzemesiyle iş ve günlük kullanım için uygundur."
+    shortDescription: "Bisiklet yaka tişört nefes alabilen kumaş ve rahat kalıp sunar.",
+    description: "Bisiklet yaka tişört, sıcak hava koşullarında rahatlık sağlayan nefes alabilen kumaş yapısına sahiptir. Ergonomik kesimi ve dayanıklı malzemesiyle iş ve günlük kullanım için uygundur. Rahat kalıbı sayesinde uzun süreli kullanım için idealdir."
   },
   {
     id: 33,
@@ -452,8 +452,8 @@ export const products = [
       `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/DMS-BT-002-LC.webp`,
       `${BASE_IMAGE_URL}/bisiklet_yaka_tshirt/DMS-BT-002-TC.webp`
     ],
-    shortDescription: "Bisiklet yaka tişört, nefes alabilen kumaşı ve rahat kalıbıyla sıcak havalarda ideal kullanım sunar.",
-    description: "Bisiklet yaka tişört, sıcak hava koşullarında rahatlık sağlayan nefes alabilen kumaş yapısına sahiptir. Ergonomik kesimi ve dayanıklı malzemesiyle iş ve günlük kullanım için uygundur."
+    shortDescription: "Reflektörlü tişört görünürlük artıran bantlar sunar.",
+    description: "T-Shirt reflektörlü, görünürlüğü artıran reflektör bantlarıyla özellikle gece çalışmalarında güvenlik sağlar. Nefes alabilen kumaş yapısı ve rahat kalıbıyla sıcak havalarda ideal kullanım sunar. Ergonomik kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur."
   },
   {
     id: 34,
@@ -468,8 +468,8 @@ export const products = [
       `${BASE_IMAGE_URL}/polo_yaka_tshirt/DMS-PT-001-SY.webp`,
       `${BASE_IMAGE_URL}/polo_yaka_tshirt/DMS-PT-001-TK.webp`
     ],
-    shortDescription: "Polo yaka tişört, kurumsal ve günlük kullanım için uygun, şık ve dayanıklı bir modeldir.",
-    description: "Polo yaka tişört, klasik polo yaka tasarımı ve nefes alabilen kumaş yapısıyla üretilmiştir. Kurumsal görünümü ve dayanıklı malzemesiyle hem iş hem günlük kullanım için uygundur."
+    shortDescription: "Polo yaka tişört kurumsal görünüm ve dayanıklı yapı sunar.",
+    description: "Polo yaka tişört, klasik polo yaka tasarımı ve nefes alabilen kumaş yapısıyla üretilmiştir. Kurumsal görünümü ve dayanıklı malzemesiyle hem iş hem günlük kullanım için uygundur. Şık tasarımı sayesinde profesyonel ortamlarda da kullanılabilir."
   },
 
   // ================= ÖNLÜKLER =================
@@ -483,8 +483,8 @@ export const products = [
       `${BASE_IMAGE_URL}/onluk/DMS-ON-001-BY.webp`,
       `${BASE_IMAGE_URL}/onluk/DMS-ON-001-KZ.webp`,
     ],
-    shortDescription: "İş önlüğü, çeşitli sektörlerde kullanıma uygun, rahat kesimi ve dayanıklı yapısıyla pratik bir çözümdür.",
-    description: "İş önlüğü, mutfak, üretim ve servis alanlarında kullanım için tasarlanmıştır. Kolay temizlenebilir kumaş yapısı, ergonomik kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için idealdir."
+    shortDescription: "Ekose önlük desenli kumaş ve dayanıklı yapı sunar.",
+    description: "Ekose önlük, desenli kumaş yapısı ve dayanıklı malzemesiyle mutfak, üretim ve servis alanlarında kullanım için tasarlanmıştır. Kolay temizlenebilir kumaş yapısı, ergonomik kesimi ve pratik kullanımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 36,
@@ -498,8 +498,8 @@ export const products = [
       `${BASE_IMAGE_URL}/onluk/DMS-ON-002-SY.webp`,
       `${BASE_IMAGE_URL}/onluk/DMS-ON-002-TK.webp`
     ],
-    shortDescription: "İş önlüğü, çeşitli sektörlerde kullanıma uygun, rahat kesimi ve dayanıklı yapısıyla pratik bir çözümdür.",
-    description: "İş önlüğü, mutfak, üretim ve servis alanlarında kullanım için tasarlanmıştır. Kolay temizlenebilir kumaş yapısı, ergonomik kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için idealdir."
+    shortDescription: "İş gönlüğü rahat kesim ve dayanıklı yapı sunar.",
+    description: "İş gönlüğü, çeşitli sektörlerde kullanıma uygun, rahat kesimi ve dayanıklı yapısıyla pratik bir çözümdür. Mutfak, üretim ve servis alanlarında kullanım için tasarlanmıştır. Kolay temizlenebilir kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için idealdir."
   },
   {
     id: 37,
@@ -511,8 +511,8 @@ export const products = [
       `${BASE_IMAGE_URL}/onluk/DMS-ON-003-KZ.webp`,
       `${BASE_IMAGE_URL}/onluk/DMS-ON-003-SY.webp`
     ],
-    shortDescription: "İş önlüğü, çeşitli sektörlerde kullanıma uygun, rahat kesimi ve dayanıklı yapısıyla pratik bir çözümdür.",
-    description: "İş önlüğü, mutfak, üretim ve servis alanlarında kullanım için tasarlanmıştır. Kolay temizlenebilir kumaş yapısı, ergonomik kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için idealdir."
+    shortDescription: "Apron önlük pratik kullanım ve dayanıklı yapı sunar.",
+    description: "Apron önlük, mutfak ve servis alanlarında kullanım için tasarlanmış pratik bir önlük modelidir. Kolay temizlenebilir kumaş yapısı, ergonomik kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için idealdir. Pratik kullanımı sayesinde günlük işlerde tercih edilir."
   },
   {
     id: 38,
@@ -524,8 +524,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-001-MV.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-001-SY.webp`
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Kolluklu önlük kol koruması ve hijyenik yapı sunar.",
+    description: "Kolluklu önlük, kolluk detayıyla kol koruması sağlayan profesyonel mutfak personeli için tasarlanmış bir önlük modelidir. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
   },
   {
     id: 39,
@@ -536,8 +536,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-002-BY.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-002-SY.webp`
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Erkek aşçı ceketi ergonomik kesim ve dayanıklı yapı sunar.",
+    description: "Erkek aşçı ceketi, profesyonel mutfaklarda rahat hareket imkânı sunan ergonomik kesimi ve dayanıklı kumaşıyla öne çıkar. Hijyenik kumaş yapısı ve kolay temizlenebilir özelliğiyle mutfak personeline rahat çalışma imkanı sağlar."
   },
   {
     id: 40,
@@ -548,8 +548,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-003-SY.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-003-BY.webp`,
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Kadın aşçı ceketi özel kesim ve ergonomik yapı sunar.",
+    description: "Kadın aşçı ceketi, vücut ergonomisine uygun kesimi ve dayanıklı yapısıyla yoğun mutfak temposuna uyum sağlar. Hijyenik kumaş yapısı ve kolay temizlenebilir özelliğiyle mutfak personeline rahat çalışma imkanı sağlar."
   },
   {
     id: 41,
@@ -562,8 +562,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-004-KZ.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-004-SY.webp`
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Düz önlük sade tasarım ve dayanıklı yapı sunar.",
+    description: "Düz önlük, sade ve dayanıklı düz iş önlüğü olarak mutfak, üretim ve servis alanlarında uzun süreli kullanım için tasarlanmıştır. Hafif ve dayanıklı bir modeldir. Kolay temizlenebilir kumaş yapısı ve ergonomik kesimiyle pratik kullanım sunar."
   },
   {
     id: 42,
@@ -575,8 +575,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-005-BY.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-005-MV.webp`
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Aşçı takımı külahlı baş koruması ve hijyenik yapı sunar.",
+    description: "Aşçı takımı külahlı, baş koruması sağlayan külah detayı ve profesyonel mutfak kullanımı için tasarlanmış olup takım halinde pratik ve şık bir çözüm sunar. Hijyenik kumaş yapısı ve kolay temizlenebilir özelliğiyle mutfak personeline rahat çalışma imkanı sağlar."
   },
   {
     id: 43,
@@ -588,8 +588,8 @@ export const products = [
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-006-KZ.webp`,
       `${BASE_IMAGE_URL}/asci_grubu/DMS-AG-006-SY.webp`
     ],
-    shortDescription: "Profesyonel mutfak personeli için tasarlanmış aşçı grubu kıyafetleri, hijyenik ve dayanıklı yapıdadır.",
-    description: "Aşçı grubu kıyafetleri, profesyonel mutfak ortamlarında kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Apron önlük askılı pratik kullanım ve dayanıklı yapı sunar.",
+    description: "Apron önlük askılı, askılı detayıyla pratik kullanım sunan profesyonel mutfak personeli için tasarlanmış bir önlük modelidir. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle mutfak personeline rahat çalışma imkanı sağlar."
   },
 
   // ================= TULUMLAR =================
@@ -601,8 +601,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/tulum/DMS-TL-001-GR.webp`
     ],
-    shortDescription: "İş tulumu, tek parça yapısıyla pratik kullanım sunan, dayanıklı kumaşı ve ergonomik kesimiyle yoğun iş temposuna uyum sağlar.",
-    description: "İş tulumu, tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Ergonomik kesimi, geniş cepleri ve sağlam dikiş yapısıyla yoğun iş temposuna uyum sağlar."
+    shortDescription: "Paddock tulum tek parça yapı ve dayanıklı kumaş sunar.",
+    description: "Paddock tulum, tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Ergonomik kesimi, geniş cepleri ve sağlam dikiş yapısıyla yoğun iş temposuna uyum sağlar. Özel kumaş yapısı sayesinde zorlu iş koşullarında güvenilir koruma sunar."
   },
   {
     id: 45,
@@ -612,8 +612,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/tulum/DMS-TL-002-FS.webp`
     ],
-    shortDescription: "İş tulumu, tek parça yapısıyla pratik kullanım sunan, dayanıklı kumaşı ve ergonomik kesimiyle yoğun iş temposuna uyum sağlar.",
-    description: "İş tulumu, tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Ergonomik kesimi, geniş cepleri ve sağlam dikiş yapısıyla yoğun iş temposuna uyum sağlar."
+    shortDescription: "Thor tulum dayanıklı kumaş ve ergonomik kesim sunar.",
+    description: "Thor tulum, tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Özel kumaş yapısı ve ergonomik kesimiyle yoğun iş temposuna uyum sağlar. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 46,
@@ -625,8 +625,8 @@ export const products = [
       `${BASE_IMAGE_URL}/tulum/DMS-TL-003-SY.webp`,
       `${BASE_IMAGE_URL}/tulum/DMS-TL-003-GR.webp`,
     ],
-    shortDescription: "İş tulumu, tek parça yapısıyla pratik kullanım sunan, dayanıklı kumaşı ve ergonomik kesimiyle yoğun iş temposuna uyum sağlar.",
-    description: "İş tulumu, tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Ergonomik kesimi, geniş cepleri ve sağlam dikiş yapısıyla yoğun iş temposuna uyum sağlar."
+    shortDescription: "Rescue tulum kurtarma operasyonları için dayanıklı yapı sunar.",
+    description: "Rescue tulum, kurtarma operasyonları için tasarlanmış tek parça yapısıyla pratik kullanım imkanı sunan dayanıklı bir iş kıyafetidir. Ergonomik kesimi, geniş cepleri ve sağlam dikiş yapısıyla yoğun iş temposuna uyum sağlar. Özel kumaş yapısı sayesinde zorlu koşullarda güvenilir koruma sunar."
   },
 
   // ================= GÜVENLİK KIYAFETLERİ =================
@@ -638,8 +638,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-001.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik mont soğuk hava koruması ve dayanıklı yapı sunar.",
+    description: "Güvenlik montu, soğuk hava koşullarında koruma sağlayan, dayanıklı ve fonksiyonel bir güvenlik kıyafetidir. Güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetidir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
   },
   {
     id: 48,
@@ -649,8 +649,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-002.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik pantolonu dayanıklı kumaş ve fonksiyonel yapı sunar.",
+    description: "Güvenlik pantolonu, güvenlik personeli için tasarlanmış, dayanıklı kumaşı ve fonksiyonel yapısıyla profesyonel kullanım sunar. Ergonomik kesimi ve geniş cepleriyle uzun süreli kullanım için idealdir. Sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 49,
@@ -660,8 +660,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-003.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik yağmurluğu su geçirmez yapı ve koruma sunar.",
+    description: "Güvenlik yağmurluğu, yağışlı hava koşullarında su geçirmez yapısıyla koruma sağlayan güvenlik personeli için özel tasarlanmış bir kıyafettir. Hafif malzemesi ve nefes alabilen özelliğiyle pratik kullanım sunar. Dayanıklı yapısıyla uzun süreli kullanım için uygundur."
   },
   {
     id: 50,
@@ -671,8 +671,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-004.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik uzun kol tişört kol koruması ve dayanıklı yapı sunar.",
+    description: "Güvenlik uzun kol T-Shirt, güvenlik personeli için özel tasarlanmış uzun kol detayıyla kol koruması sağlayan profesyonel bir iş kıyafetidir. Dayanıklı kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için uygundur. Nefes alabilen kumaş yapısı sayesinde rahat kullanım sunar."
   },
   {
     id: 51,
@@ -682,8 +682,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-005.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik kısa kol tişört rahat kullanım ve dayanıklı yapı sunar.",
+    description: "Güvenlik kısa kol T-Shirt, güvenlik personeli için özel tasarlanmış kısa kol detayıyla sıcak havalarda rahat kullanım sunan profesyonel bir iş kıyafetidir. Dayanıklı kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için uygundur. Nefes alabilen kumaş yapısı sayesinde ideal kullanım sunar."
   },
   {
     id: 52,
@@ -693,8 +693,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/guvenlik/DMS-GV-006.webp`
     ],
-    shortDescription: "Güvenlik personeli için özel tasarlanmış kıyafetler, profesyonel görünüm ve dayanıklı yapıdadır.",
-    description: "Güvenlik kıyafetleri, güvenlik personeli için özel olarak tasarlanmış profesyonel iş kıyafetleridir. Dayanıklı kumaş yapısı, fonksiyonel detayları ve şık tasarımıyla uzun süreli kullanım için uygundur."
+    shortDescription: "Güvenlik sweatshirt sıcak tutan yapı ve dayanıklı kumaş sunar.",
+    description: "Güvenlik sweatshirt, güvenlik personeli için özel tasarlanmış sıcak tutan kumaş yapısıyla soğuk hava koşullarında koruma sağlayan profesyonel bir iş kıyafetidir. Dayanıklı kumaş yapısı ve ergonomik kesimiyle uzun süreli kullanım için uygundur. Rahat kesimi sayesinde uzun süreli kullanım için idealdir."
   },
 
   // ================= SAĞLIKÇI KIYAFETLERİ =================
@@ -708,8 +708,8 @@ export const products = [
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-001-LC.webp`,
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-001-PB.webp`
     ],
-    shortDescription: "Sağlık personeli için özel tasarlanmış kıyafetler, hijyenik ve dayanıklı yapıdadır.",
-    description: "Sağlıkçı kıyafetleri, sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Desenli sağlıkçı önlük hijyenik yapı ve dayanıklı kumaş sunar.",
+    description: "Sağlıkçı desenli önlük, desenli kumaş yapısı ve hijyenik özelliğiyle sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar. Dayanıklı yapısıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 54,
@@ -723,8 +723,8 @@ export const products = [
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-002-MV.webp`,
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-002-SY.webp`,
     ],
-    shortDescription: "Sağlık personeli için özel tasarlanmış kıyafetler, hijyenik ve dayanıklı yapıdadır.",
-    description: "Sağlıkçı kıyafetleri, sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Düz sağlıkçı önlük sade tasarım ve hijyenik yapı sunar.",
+    description: "Düz sağlıkçı önlük, sade tasarımı ve hijyenik kumaş yapısıyla sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar. Dayanıklı yapısıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 55,
@@ -736,8 +736,8 @@ export const products = [
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-003-BD.webp`,
       `${BASE_IMAGE_URL}/saglikci/DMS-SG-003-MV.webp`
     ],
-    shortDescription: "Sağlık personeli için özel tasarlanmış kıyafetler, hijyenik ve dayanıklı yapıdadır.",
-    description: "Sağlıkçı kıyafetleri, sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Hijyenik kumaş yapısı, kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar."
+    shortDescription: "Uzun sağlıkçı önlük yırtmaçlı pratik kullanım ve hijyenik yapı sunar.",
+    description: "Uzun sağlıkçı önlük yırtmaçlı, yırtmaç detayıyla pratik kullanım sunan ve hijyenik kumaş yapısıyla sağlık sektöründe kullanım için özel olarak tasarlanmıştır. Uzun kesimi sayesinde daha fazla koruma sağlar. Kolay temizlenebilir özelliği ve ergonomik kesimiyle sağlık personeline rahat çalışma imkanı sağlar."
   },
 
   // ================= YAĞMURLUK =================
@@ -750,8 +750,8 @@ export const products = [
       `${BASE_IMAGE_URL}/yagmurluk/DMS-YG-001-FS.webp`,
       `${BASE_IMAGE_URL}/yagmurluk/DMS-YG-001-LC.webp`
     ],
-    shortDescription: "Yağmurluk, su geçirmez yapısı ve hafif malzemesiyle yağışlı hava koşullarında koruma sağlar.",
-    description: "Yağmurluk, yağışlı hava koşullarında su geçirmez yapısıyla koruma sağlamak üzere tasarlanmıştır. Hafif malzemesi, nefes alabilen özelliği ve pratik kullanımıyla ideal bir dış giyim ürünüdür."
+    shortDescription: "Uzun yağmurluk su geçirmez yapı ve yüksek görünürlük sunar.",
+    description: "Uzun yağmurluk, uzun kesimi ve su geçirmez yapısıyla yağışlı hava koşullarında maksimum koruma sağlar. Yüksek görünürlük özelliği sayesinde özellikle gece çalışmalarında güvenlik sağlar. Hafif malzemesi ve nefes alabilen özelliğiyle pratik kullanım sunar."
   },
   {
     id: 57,
@@ -761,8 +761,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yagmurluk/DMS-YG-002-LC.webp`
     ],
-    shortDescription: "Yağmurluk, su geçirmez yapısı ve hafif malzemesiyle yağışlı hava koşullarında koruma sağlar.",
-    description: "Yağmurluk, yağışlı hava koşullarında su geçirmez yapısıyla koruma sağlamak üzere tasarlanmıştır. Hafif malzemesi, nefes alabilen özelliği ve pratik kullanımıyla ideal bir dış giyim ürünüdür."
+    shortDescription: "Yağmurluk ceket su geçirmez yapı ve pratik kullanım sunar.",
+    description: "Yağmurluk ceket, su geçirmez yapısıyla yağışlı hava koşullarında koruma sağlamak üzere tasarlanmıştır. Ceket kesimi sayesinde pratik kullanım sunar. Hafif malzemesi, nefes alabilen özelliği ve dayanıklı yapısıyla ideal bir dış giyim ürünüdür."
   },
 
   // ================= AKSESUARLAR =================
@@ -776,8 +776,8 @@ export const products = [
       `${BASE_IMAGE_URL}/baret/DMS-BR-001-SR.webp`,
       `${BASE_IMAGE_URL}/baret/DMS-BR-001-TC.webp`
     ],
-    shortDescription: "İş güvenliği bareti, baş koruması sağlayan darbelere dayanıklı koruyucu ekipmandır.",
-    description: "İş güvenliği bareti, şantiye ve endüstriyel alanlarda baş koruması için kullanılan temel güvenlik ekipmanıdır. Darbelere dayanıklı yapısı ve hafif tasarımıyla günlük kullanım için uygundur."
+    shortDescription: "Baret baş koruması sağlayan darbelere dayanıklı ekipmandır.",
+    description: "Baret, şantiye ve endüstriyel alanlarda baş koruması için kullanılan temel güvenlik ekipmanıdır. Darbelere dayanıklı yapısı ve hafif tasarımıyla günlük kullanım için uygundur. İş güvenliği standartlarına uygun olarak üretilmiştir."
   },
   {
     id: 59,
@@ -787,8 +787,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/bere/DMS-BR-002-TC.webp`
     ],
-    shortDescription: "Soğuk hava koşullarında baş koruması sağlayan iş beresi, sıcak tutan yapıdadır.",
-    description: "İş beresi, soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar."
+    shortDescription: "Kep baş koruması sağlayan pratik aksesuardır.",
+    description: "Kep, soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar. Pratik kullanımı sayesinde günlük işlerde tercih edilir."
   },
   {
     id: 60,
@@ -798,8 +798,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/bere/DMS-BR-003-SY.webp`
     ],
-    shortDescription: "Soğuk hava koşullarında baş koruması sağlayan iş beresi, sıcak tutan yapıdadır.",
-    description: "İş beresi, soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar."
+    shortDescription: "Polar bere sıcak tutan polar kumaş yapısı sunar.",
+    description: "Polar bere, sıcak tutan polar kumaş yapısıyla soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar. Polar kumaş sayesinde maksimum sıcaklık sağlar."
   },
   {
     id: 61,
@@ -811,8 +811,8 @@ export const products = [
       `${BASE_IMAGE_URL}/bere/DMS-BR-004-MV.webp`,
       `${BASE_IMAGE_URL}/bere/DMS-BR-004-SY.webp`
     ],
-    shortDescription: "Soğuk hava koşullarında baş koruması sağlayan iş beresi, sıcak tutan yapıdadır.",
-    description: "İş beresi, soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar."
+    shortDescription: "Kumaş bere sıcak tutan kumaş yapısı ve pratik kullanım sunar.",
+    description: "Kumaş bere, sıcak tutan kumaş yapısıyla soğuk hava koşullarında başı sıcak tutmak için tasarlanmış pratik bir aksesuardır. Hafif ve konforlu yapısıyla dış mekan çalışmalarında ideal koruma sağlar. Dayanıklı kumaş yapısıyla uzun ömürlü kullanım sunar."
   },
   {
     id: 62,
@@ -827,8 +827,8 @@ export const products = [
       `${BASE_IMAGE_URL}/boyunluk_eldiven/DMS-EB-001-LC 2.webp`,
       `${BASE_IMAGE_URL}/boyunluk_eldiven/DMS-EB-001-SY.webp`
     ],
-    shortDescription: "Boyunluk ve eldiven seti, soğuk hava koşullarında ek koruma sağlayan pratik aksesuarlardır.",
-    description: "Boyunluk ve eldiven seti, soğuk hava koşullarında boyun ve el koruması için tasarlanmıştır. Sıcak tutan yapısı ve esnek malzemesiyle rahat kullanım imkanı sunar."
+    shortDescription: "Boyunluk eldiven takımı soğuk hava koruması sunar.",
+    description: "Boyunluk ve eldiven takımı, soğuk hava koşullarında boyun ve el koruması için tasarlanmıştır. Sıcak tutan yapısı ve esnek malzemesiyle rahat kullanım imkanı sunar. Takım halinde kullanım sayesinde pratik bir çözümdür."
   },
   {
     id: 63,
@@ -838,8 +838,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/maske/DMS-MS-001.webp`
     ],
-    shortDescription: "İş maskesi, toz ve partiküllere karşı koruma sağlayan temel güvenlik ekipmanıdır.",
-    description: "İş maskesi, tozlu ve partiküllü çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Nefes alabilir yapısı ve filtreleme özelliğiyle güvenli çalışma imkanı sunar."
+    shortDescription: "Tam yüz maske solunum koruması ve filtreleme sunar.",
+    description: "EPDM/PC tam yüz maske, tam yüz koruması sağlayan ve tozlu, partiküllü çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Nefes alabilir yapısı ve gelişmiş filtreleme özelliğiyle güvenli çalışma imkanı sunar."
   },
   {
     id: 64,
@@ -849,8 +849,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/maske/DMS-MS-002.webp`
     ],
-    shortDescription: "İş maskesi, toz ve partiküllere karşı koruma sağlayan temel güvenlik ekipmanıdır.",
-    description: "İş maskesi, tozlu ve partiküllü çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Nefes alabilir yapısı ve filtreleme özelliğiyle güvenli çalışma imkanı sunar."
+    shortDescription: "Duman toz maskesi solunum koruması ve filtreleme sunar.",
+    description: "Duman ve toz maskesi, dumanlı ve tozlu çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Özel filtreleme özelliği sayesinde hem duman hem toz partiküllerine karşı koruma sağlar. Nefes alabilir yapısıyla güvenli çalışma imkanı sunar."
   },
   {
     id: 65,
@@ -860,8 +860,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/maske/DMS-MS-003.webp`
     ],
-    shortDescription: "İş maskesi, toz ve partiküllere karşı koruma sağlayan temel güvenlik ekipmanıdır.",
-    description: "İş maskesi, tozlu ve partiküllü çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Nefes alabilir yapısı ve filtreleme özelliğiyle güvenli çalışma imkanı sunar."
+    shortDescription: "Toz maskesi partikül koruması ve filtreleme sunar.",
+    description: "Toz maskesi, tozlu çalışma ortamlarında solunum koruması sağlamak üzere tasarlanmıştır. Nefes alabilir yapısı ve filtreleme özelliğiyle güvenli çalışma imkanı sunar. Hafif yapısı sayesinde uzun süreli kullanım için uygundur."
   },
 
   // ================= DİĞER ÜRÜNLER =================
@@ -874,8 +874,8 @@ export const products = [
       `${BASE_IMAGE_URL}/gomlek/DMS-GM-001-KZ.webp`,
       `${BASE_IMAGE_URL}/gomlek/DMS-GM-001-BY.webp`,
     ],
-    shortDescription: "İş gömleği, profesyonel görünümü ve dayanıklı yapısıyla kurumsal kullanım için uygundur.",
-    description: "İş gömleği, kurumsal ve profesyonel ortamlarda kullanım için tasarlanmıştır. Dayanıklı kumaş yapısı, kolay ütülenebilir özelliği ve şık tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Düz gömlek profesyonel görünüm ve dayanıklı yapı sunar.",
+    description: "Düz gömlek, kurumsal ve profesyonel ortamlarda kullanım için tasarlanmıştır. Dayanıklı kumaş yapısı, kolay ütülenebilir özelliği ve şık tasarımıyla uzun süreli kullanım için idealdir. Sade tasarımı sayesinde profesyonel görünüm sağlar."
   },
   {
     id: 67,
@@ -885,8 +885,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/kot/DMS-KT-001.webp`
     ],
-    shortDescription: "Kot iş kıyafeti, dayanıklı kot kumaşı ve modern tasarımıyla hem iş hem günlük kullanım için uygundur.",
-    description: "Kot iş kıyafeti, dayanıklı kot kumaşı ve ergonomik tasarımıyla yoğun iş temposuna uyum sağlar. Modern görünümü ve pratik yapısıyla hem iş hem günlük kullanım için ideal bir seçenektir."
+    shortDescription: "Kot ceket reflektörlü görünürlük artıran bantlar sunar.",
+    description: "Kot ceket reflektörlü, dayanıklı kot kumaşı ve reflektör bantlarıyla hem konfor hem güvenlik sunan bir üründür. Özellikle gece çalışmalarında görünürlüğü artırır. Modern görünümü ve pratik yapısıyla hem iş hem günlük kullanım için ideal bir seçenektir."
   },
   {
     id: 68,
@@ -896,8 +896,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/kot/DMS-KT-002.webp`
     ],
-    shortDescription: "Kot iş kıyafeti, dayanıklı kot kumaşı ve modern tasarımıyla hem iş hem günlük kullanım için uygundur.",
-    description: "Kot iş kıyafeti, dayanıklı kot kumaşı ve ergonomik tasarımıyla yoğun iş temposuna uyum sağlar. Modern görünümü ve pratik yapısıyla hem iş hem günlük kullanım için ideal bir seçenektir."
+    shortDescription: "Kot pantolon dayanıklı kumaş ve rahat kesim sunar.",
+    description: "Kot pantolon, dayanıklı kot kumaşı ve ergonomik tasarımıyla yoğun iş temposuna uyum sağlar. Modern görünümü ve pratik yapısıyla hem iş hem günlük kullanım için ideal bir seçenektir. Geniş cepleri ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 69,
@@ -907,8 +907,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/kot/DMS-KT-003.webp`
     ],
-    shortDescription: "Kot iş kıyafeti, dayanıklı kot kumaşı ve modern tasarımıyla hem iş hem günlük kullanım için uygundur.",
-    description: "Kot iş kıyafeti, dayanıklı kot kumaşı ve ergonomik tasarımıyla yoğun iş temposuna uyum sağlar. Modern görünümü ve pratik yapısıyla hem iş hem günlük kullanım için ideal bir seçenektir."
+    shortDescription: "Kot gömlek dayanıklı kumaş ve modern tasarım sunar.",
+    description: "Kot gömlek, dayanıklı kot kumaşı ve modern tasarımıyla hem iş hem günlük kullanım için uygundur. Ergonomik kesimi ve pratik yapısıyla uzun süreli kullanım için idealdir. Kolay ütülenebilir özelliği sayesinde pratik kullanım sunar."
   },
   {
     id: 70,
@@ -918,8 +918,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/ayakkabi/DMS-AY-001.webp`
     ],
-    shortDescription: "İş güvenliği standartlarına uygun, dayanıklı ve konforlu iş ayakkabıları.",
-    description: "İş ayakkabıları, çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı malzeme yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Jüpiter ayakkabı dayanıklı yapı ve ayak koruması sunar.",
+    description: "Jüpiter ayakkabı, çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı malzeme yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. İş güvenliği standartlarına uygun olarak üretilmiştir."
   },
   {
     id: 71,
@@ -929,8 +929,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/ayakkabi/DMS-AY-002.webp`
     ],
-    shortDescription: "İş güvenliği standartlarına uygun, dayanıklı ve konforlu iş ayakkabıları.",
-    description: "İş ayakkabıları, çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı malzeme yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Kompozit ayakkabı özel malzeme ve ayak koruması sunar.",
+    description: "Kompozit ayakkabı, özel kompozit malzeme yapısıyla çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir. İş güvenliği standartlarına uygundur."
   },
   {
     id: 72,
@@ -940,8 +940,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/ayakkabi/DMS-AY-003.webp`
     ],
-    shortDescription: "İş güvenliği standartlarına uygun, dayanıklı ve konforlu iş ayakkabıları.",
-    description: "İş ayakkabıları, çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı malzeme yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
+    shortDescription: "Bağcık ayarlı bot ayarlanabilir bağcık ve ayak koruması sunar.",
+    description: "Bağcık ayarlı bot, ayarlanabilir bağcık detayıyla pratik kullanım sunan ve çalışma ortamlarında ayak koruması sağlamak üzere tasarlanmıştır. Dayanıklı malzeme yapısı, kaymaz taban özelliği ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 73,
@@ -951,8 +951,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/alev_almaz/DMS-AF-001-LC.webp`
     ],
-    shortDescription: "Alev almaz özellikli iş kıyafeti, yüksek sıcaklıklara dayanıklı koruyucu kumaş yapısıyla güvenlik sağlar.",
-    description: "Alev almaz iş kıyafeti, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar."
+    shortDescription: "Alev almaz başlık yüksek sıcaklık koruması sunar.",
+    description: "Alev almaz başlık, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Baş koruması sağlayan bu aksesuar, endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar."
   },
   {
     id: 74,
@@ -962,8 +962,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/alev_almaz/DMS-AF-002-LC.webp`
     ],
-    shortDescription: "Alev almaz özellikli iş kıyafeti, yüksek sıcaklıklara dayanıklı koruyucu kumaş yapısıyla güvenlik sağlar.",
-    description: "Alev almaz iş kıyafeti, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar."
+    shortDescription: "Alev almaz ceket yüksek sıcaklık koruması sunar.",
+    description: "Alev almaz ceket, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar. Dayanıklı yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 75,
@@ -973,8 +973,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/alev_almaz/DMS-AF-003-LC.webp`
     ],
-    shortDescription: "Alev almaz özellikli iş kıyafeti, yüksek sıcaklıklara dayanıklı koruyucu kumaş yapısıyla güvenlik sağlar.",
-    description: "Alev almaz iş kıyafeti, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar."
+    shortDescription: "Alev almaz pantolon yüksek sıcaklık koruması sunar.",
+    description: "Alev almaz pantolon, yüksek sıcaklıklara ve alevlere karşı koruma sağlayan özel kumaş yapısıyla üretilmiştir. Endüstriyel alanlarda ve riskli iş ortamlarında güvenli çalışma imkanı sunar. Dayanıklı yapısı ve ergonomik kesimiyle uzun süreli kullanım için idealdir."
   },
   {
     id: 76,
@@ -984,8 +984,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek_pantolon_takim/DMS-YT-001.webp`
     ],
-    shortDescription: "Yelek pantolon takımı, takım halinde şık görünüm sağlayan ve pratik kullanım sunan bir üründür.",
-    description: "Yelek pantolon takımı, üst ve alt parçadan oluşan takım halinde kullanım için tasarlanmıştır. Uyumlu tasarımı, dayanıklı kumaş yapısı ve fonksiyonel detaylarıyla profesyonel görünüm sağlar."
+    shortDescription: "Çok cepli yelek fonksiyonel cep detayları ve pratik kullanım sunar.",
+    description: "Çok cepli yelek, çok sayıda cep detayıyla pratik kullanım sunan bir iş kıyafetidir. Saha ve fabrika ortamlarında eşyalarınızı güvenle taşıyabilirsiniz. Dayanıklı kumaş yapısı ve ergonomik tasarımıyla uzun süreli kullanım için idealdir."
   },
   {
     id: 77,
@@ -995,8 +995,8 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek_pantolon_takim/DMS-YT-002.webp`
     ],
-    shortDescription: "Yelek pantolon takımı, takım halinde şık görünüm sağlayan ve pratik kullanım sunan bir üründür.",
-    description: "Yelek pantolon takımı, üst ve alt parçadan oluşan takım halinde kullanım için tasarlanmıştır. Uyumlu tasarımı, dayanıklı kumaş yapısı ve fonksiyonel detaylarıyla profesyonel görünüm sağlar."
+    shortDescription: "Çok cepli pantolon fonksiyonel cep detayları ve pratik kullanım sunar.",
+    description: "Çok cepli pantolon, çok sayıda cep detayıyla pratik kullanım sunan bir iş kıyafetidir. Geniş cepleri sayesinde eşyalarınızı güvenle taşıyabilirsiniz. Dayanıklı kumaş yapısı, ergonomik kesimi ve sağlam dikiş yapısıyla uzun ömürlü kullanım sağlar."
   },
   {
     id: 78,
@@ -1006,7 +1006,7 @@ export const products = [
     images: [
       `${BASE_IMAGE_URL}/yelek_pantolon_takim/DMS-YT-003.webp`
     ],
-    shortDescription: "Yelek pantolon takımı, takım halinde şık görünüm sağlayan ve pratik kullanım sunan bir üründür.",
-    description: "Yelek pantolon takımı, üst ve alt parçadan oluşan takım halinde kullanım için tasarlanmıştır. Uyumlu tasarımı, dayanıklı kumaş yapısı ve fonksiyonel detaylarıyla profesyonel görünüm sağlar."
+    shortDescription: "Çift renk sweatshirt modern tasarım ve sıcak tutan yapı sunar.",
+    description: "Çift renk sweatshirt, modern çift renk tasarımı ve sıcak tutan kumaş yapısıyla soğuk hava koşullarında ideal koruma sunar. Rahat kesimi ve dayanıklı malzemesiyle uzun süreli kullanım için uygundur. Çift renk detayıyla hem iş hem günlük kullanım için şık bir seçenektir."
   }
 ];
